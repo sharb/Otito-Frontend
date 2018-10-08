@@ -11,7 +11,7 @@ class Globals:
   
 
 
-    TEMPLATE_PATH = CWD + '/src/app/templates'
+    TEMPLATE_PATH = CWD + '/public/templates'
     STATIC_PATH = '/public'                                 # hostname.com/public/style/bundled.css
-    STATIC_FOLDER = CWD + '/src/public/static' 
+    STATIC_FOLDER = CWD + '/public/static' 
 

@@ -3,7 +3,7 @@ var path = require('path');
 
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/public/static/js');    // bundle.js path
+var BUILD_DIR = path.resolve(__dirname, 'public/static/js');    // bundle.js path
 var SRC_DIR = path.resolve(__dirname, 'src/app/js');                // react application's codebase
 
 console.log(BUILD_DIR)

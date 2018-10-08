@@ -26016,9 +26016,9 @@ var _about = __webpack_require__(63);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _landing = __webpack_require__(64);
+var _gallery = __webpack_require__(64);
 
-var _landing2 = _interopRequireDefault(_landing);
+var _gallery2 = _interopRequireDefault(_gallery);
 
 var _reactRouterDom = __webpack_require__(13);
 
@@ -26046,7 +26046,7 @@ var Body = function (_React$Component) {
 			return _react2.default.createElement(
 				'span',
 				null,
-				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _landing2.default }),
+				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _gallery2.default }),
 				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default })
 			);
 		}
