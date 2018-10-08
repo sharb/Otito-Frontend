@@ -2181,7 +2181,7 @@ var App = function (_React$Component) {
         null,
         _react2.default.createElement(
           'div',
-          { className: 'container', id: 'bootstrap-override' },
+          { className: 'h-100 container', id: 'bootstrap-override' },
           _react2.default.createElement(_header2.default, null),
           _react2.default.createElement(_body2.default, null)
         )
@@ -23423,40 +23423,96 @@ var Header = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'nav',
-				{ className: 'navbar navbar-expand-lg navbar-light bg-light' },
-				_react2.default.createElement(
-					'a',
-					{ className: 'navbar-brand', href: '#' },
-					'Otito'
-				),
-				_react2.default.createElement(
-					'button',
-					{ className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarNav', 'aria-controls': 'navbarNav', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-					_react2.default.createElement('span', { className: 'navbar-toggler-icon' })
-				),
+				{ className: 'p-0 navbar navbar-expand-lg navbar-light bg-white' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'collapse navbar-collapse', id: 'navbarNav' },
+					{ className: 'container' },
 					_react2.default.createElement(
-						'ul',
-						{ className: 'navbar-nav' },
+						'div',
+						{ className: 'd-flex align-items-center' },
 						_react2.default.createElement(
-							'li',
-							{ className: 'nav-item active' },
+							'div',
+							{ className: 'p-2' },
 							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/', className: 'nav-link' },
-								'home'
+								'a',
+								{ className: 'm-0 navbar-brand ', href: '#' },
+								_react2.default.createElement('img', { src: '/public/images/otito-logo_burned.png', width: '50', height: '35', className: 'p-0 d-inline-block', alt: '' })
 							)
 						),
 						_react2.default.createElement(
-							'li',
-							{ className: 'nav-item' },
+							'div',
+							{ className: 'p-2' },
 							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/about', className: 'nav-link' },
-								'about'
+								'h3',
+								null,
+								'otito'
 							)
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'd-flex' },
+						_react2.default.createElement(
+							'div',
+							{ className: ' p-2 ' },
+							_react2.default.createElement(
+								'button',
+								{ className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+								_react2.default.createElement('span', { className: 'navbar-toggler-icon' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'p-2' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'collapse navbar-collapse', id: 'myNavbar' },
+								_react2.default.createElement(
+									'ul',
+									{ className: 'navbar-nav ml-auto flex-nowrap' },
+									_react2.default.createElement(
+										'li',
+										{ className: 'nav-item' },
+										_react2.default.createElement(
+											_reactRouterDom.Link,
+											{ to: '/', className: 'nav-link m-2 menu-item nav-active' },
+											'HOME'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										{ className: 'nav-item' },
+										_react2.default.createElement(
+											_reactRouterDom.Link,
+											{ to: '/contribute', className: 'nav-link m-2 menu-item' },
+											'CONTRIBUTE'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										{ className: 'nav-item' },
+										_react2.default.createElement(
+											_reactRouterDom.Link,
+											{ to: '/join', className: 'nav-link m-2 menu-item' },
+											'JOIN'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										{ className: 'nav-item' },
+										_react2.default.createElement(
+											_reactRouterDom.Link,
+											{ to: '/about', className: 'nav-link m-2 menu-item' },
+											'ABOUT'
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'p-2' },
+							_react2.default.createElement('img', { src: '/public/images/pro-pic.jpg', width: '50', height: '50', className: 'd-inline-block', alt: 'profile pic', id: 'profile-pic' })
 						)
 					)
 				)
@@ -26012,15 +26068,23 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(7);
 
+var _reactRouterDom = __webpack_require__(13);
+
 var _about = __webpack_require__(63);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _gallery = __webpack_require__(64);
+var _home = __webpack_require__(67);
 
-var _gallery2 = _interopRequireDefault(_gallery);
+var _home2 = _interopRequireDefault(_home);
 
-var _reactRouterDom = __webpack_require__(13);
+var _join = __webpack_require__(66);
+
+var _join2 = _interopRequireDefault(_join);
+
+var _contribute = __webpack_require__(65);
+
+var _contribute2 = _interopRequireDefault(_contribute);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26029,6 +26093,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// pages
+
 
 var Body = function (_React$Component) {
 	_inherits(Body, _React$Component);
@@ -26046,7 +26113,9 @@ var Body = function (_React$Component) {
 			return _react2.default.createElement(
 				'span',
 				null,
-				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _gallery2.default }),
+				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
+				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contribute', component: _contribute2.default }),
+				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/join', component: _join2.default }),
 				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default })
 			);
 		}
@@ -26111,7 +26180,8 @@ var About = function (_React$Component) {
 exports.default = About;
 
 /***/ }),
-/* 64 */
+/* 64 */,
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26137,16 +26207,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Landing = function (_React$Component) {
-	_inherits(Landing, _React$Component);
+var Contribute = function (_React$Component) {
+	_inherits(Contribute, _React$Component);
 
-	function Landing(props) {
-		_classCallCheck(this, Landing);
+	function Contribute(props) {
+		_classCallCheck(this, Contribute);
 
-		return _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).call(this, props));
+		return _possibleConstructorReturn(this, (Contribute.__proto__ || Object.getPrototypeOf(Contribute)).call(this, props));
 	}
 
-	_createClass(Landing, [{
+	_createClass(Contribute, [{
 		key: 'render',
 		value: function render() {
 
@@ -26158,10 +26228,139 @@ var Landing = function (_React$Component) {
 		}
 	}]);
 
-	return Landing;
+	return Contribute;
 }(_react2.default.Component);
 
-exports.default = Landing;
+exports.default = Contribute;
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Join = function (_React$Component) {
+	_inherits(Join, _React$Component);
+
+	function Join(props) {
+		_classCallCheck(this, Join);
+
+		return _possibleConstructorReturn(this, (Join.__proto__ || Object.getPrototypeOf(Join)).call(this, props));
+	}
+
+	_createClass(Join, [{
+		key: 'render',
+		value: function render() {
+
+			return _react2.default.createElement(
+				'p',
+				null,
+				'Landing Page'
+			);
+		}
+	}]);
+
+	return Join;
+}(_react2.default.Component);
+
+exports.default = Join;
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_React$Component) {
+	_inherits(Home, _React$Component);
+
+	function Home(props) {
+		_classCallCheck(this, Home);
+
+		return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+	}
+
+	_createClass(Home, [{
+		key: 'render',
+		value: function render() {
+
+			return _react2.default.createElement(
+				'div',
+				{ className: 'h-100' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'row h-100 align-items-center' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'col-12 col-md-8' },
+						_react2.default.createElement(
+							'h1',
+							null,
+							_react2.default.createElement(
+								'strong',
+								null,
+								'Society\'s most democratic tool for documenting and sharing objectively verifable political truth'
+							)
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'div',
+							{ className: 'input-group mb-3' },
+							_react2.default.createElement('input', { type: 'text', className: 'searchbar form-control form-control-lg', placeholder: 'Search for the truth about anything...', 'aria-label': 'truth' }),
+							_react2.default.createElement('span', { className: 'fas fa-search searchbar-icon' })
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Home;
+}(_react2.default.Component);
+
+exports.default = Home;
 
 /***/ })
 /******/ ]);

@@ -7,7 +7,7 @@
     "start": "python src/app/flask_app.py",
     "build": "webpack --config webpack.config.js --watch --colors",
     "dev": "webpack-dev-server --hot --progress --colors --config webpack.config.js",
-    "sass": "sass --watch src/app/styles/scss/bundled.scss:src/public/static/styles/bundled.css",
+    "sass": "sass --watch src/app/styles/scss/base.scss:public/static/styles/bundled.css",
     "mysql": "/usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysql -h localhost -u root -p"
   },
   "author": "",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "sass": "^1.14.1"
   }
 }

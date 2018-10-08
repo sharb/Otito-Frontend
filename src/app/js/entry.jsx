@@ -13,7 +13,7 @@ class App extends React.Component {
   render () {
     return (
     	<Router>
-            <div className="container" id="bootstrap-override"> 
+            <div className="h-100 container" id="bootstrap-override"> 
                 <Header/> 
                 <Body/>
             </div>
