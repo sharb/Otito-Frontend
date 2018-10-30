@@ -1,7 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Header from './components/header.jsx';
-import Body from './components/body.jsx';
+import Header from './components/shared/header.jsx';
+import Footer from './components/shared/footer.jsx';
+import Body from './components/shared/body.jsx';
 import {
   BrowserRouter as Router,
   Route,
@@ -12,12 +13,20 @@ import {
 class App extends React.Component {
   render () {
     return (
-    	<Router>
-            <div className="h-100 container" id="bootstrap-override"> 
-                <Header/> 
-                <Body/>
-            </div>
+    	<span>
+       
+       
+
+        <Router>
+          <div className="d-flex flex-column bd-highlight main-wrapper">
+            <div className="p-2"> <Header/> </div>
+            <div className="mt-auto p-2"><Body/></div>
+            <div className="mt-auto p-2 bd-highlight"><Footer/></div>
+          </div>
+            
         </Router>
+       
+      </span>
     );
   }
 }

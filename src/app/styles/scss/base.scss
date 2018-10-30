@@ -1,6 +1,11 @@
+$main-green: #7fe8b9;
+
+
 
 // IMPORTS
 @import 'header.scss';
+@import 'topic.scss';
+@import 'footer.scss';
 @import 'home.scss';
 
 
@@ -18,23 +23,41 @@
 @media (min-width: 992px) {  }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  
-
+@media (min-width: 1200px) {
 }
 
 
 
 html, body {
 	height: 100%;
+	font-size: 100%;
 
 }
 
 
-
-.height-full {
-	height: 100%;
+.border{
+	border: 1px solid black;
 }
 
+.center-content-h {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+
+ .center-content-v {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+
+.main-wrapper {
+	height: 100% !important;
+}
 
 .themes {
 	

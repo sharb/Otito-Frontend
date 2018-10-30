@@ -1,6 +1,31 @@
 
 
 
-img#profile-pic {
-    border-radius: 50%;
+
+
+#main-navbar {
+	.menu-item{
+		padding: 0px;
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+	}
+
+	.menu-item:hover{
+		font-weight: 900;
+  		border-bottom: 2px solid $main-green;
+	}
+
+
+	img#profile-pic {
+    	border-radius: 50%;
+	}
+
+
+}
+
+
+.active-tab {
+	font-weight: 900;
+	text-decoration: underline;
+  	border-bottom: 1px solid $main-green;
 }
