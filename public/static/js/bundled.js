@@ -2198,7 +2198,7 @@ var App = function (_React$Component) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'mt-auto p-2' },
+              { className: 'p-2' },
               _react2.default.createElement(_body2.default, null)
             ),
             _react2.default.createElement(
@@ -26327,32 +26327,45 @@ var Home = function (_React$Component) {
 				{ className: 'd-flex' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'p-2' },
+					{ className: 'p-2 mt-5' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'row mt-5' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8' },
+							{ className: 'col-9' },
 							_react2.default.createElement(
-								'h1',
-								{ className: '' },
+								'div',
+								{ className: 'row' },
 								_react2.default.createElement(
-									'strong',
-									null,
-									'Society\'s most democratic tool for documenting and sharing objectively verifable political truth'
+									'div',
+									{ className: 'col-12' },
+									_react2.default.createElement(
+										'h1',
+										{ className: '' },
+										_react2.default.createElement(
+											'strong',
+											null,
+											'Society\'s most democratic tool for documenting and sharing objectively verifable political truth'
+										)
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'input-group  searchbar-col ' },
+										_react2.default.createElement('input', { type: 'text', className: 'searchbar form-control form-control-lg', placeholder: 'Search for the truth about anything...', 'aria-label': 'truth' }),
+										_react2.default.createElement('span', { className: 'fas fa-search searchbar-icon' })
+									)
 								)
 							)
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'input-group  searchbar-col ' },
-								_react2.default.createElement('input', { type: 'text', className: 'searchbar form-control form-control-lg', placeholder: 'Search for the truth about anything...', 'aria-label': 'truth' }),
-								_react2.default.createElement('span', { className: 'fas fa-search searchbar-icon' })
-							)
+							{ className: 'col-3' },
+							_react2.default.createElement('img', { src: '/public/images/people.png', id: 'home-people-img', alt: 'Responsive image' })
 						)
 					)
 				)
