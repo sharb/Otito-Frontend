@@ -1,7 +1,51 @@
 
+.home-header{
+	z-index: 10;
+	position:relative;
+}
+
+
+.slide{
+    text-align: center;
+    height: 100vh;
+    overflow: auto;
+    padding: 100px;
+
+    .slide-description{
+    	padding-top: 40px;
+    }  
+
+    img {
+    	margin: 20px;
+    	padding: 0px;
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(89,87,89,0.3);
+		-moz-box-shadow: 0px 0px 5px 3px rgba(89,87,89,0.3);
+		box-shadow: 0px 0px 5px 3px rgba(89,87,89,0.3);
+
+    }
+}
+
+.slide-one{
+	
+}
+
+.slide-two{
+	background-image: url("/public/images/backgrounds/blues.jpg");
+}
+
+.slide-three{
+	background-image: url("/public/images/backgrounds/cocoa.jpg");
+}
+
+.slide-four{
+	background-image: url("/public/images/backgrounds/subu.jpg");
+}
+
+
 
 .home-text{
 	font-size: 2em;	
+	z-index: 9;
 }
 
 
@@ -50,4 +94,5 @@
 
 .upscribe-form{
 	width:100%;max-width:800px;margin:0 auto;
+	margin-top: -80px !important;	
 }

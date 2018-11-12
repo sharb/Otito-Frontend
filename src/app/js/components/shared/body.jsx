@@ -26,7 +26,7 @@ export default class Body extends React.Component {
 	
 		return (
 		
-            <div className="container" id="bootstrap-override">
+            <div className="container-fluid p-0" id="bootstrap-override">
 				<Route exact path='/' component={Home}/>
 				<Route exact path='/topics' component={Topic}/>
 				<Route exact path='/contribute' component={Contribute}/>

@@ -23,7 +23,7 @@ export default class Header extends React.Component {
 			        <div className="d-flex align-items-center">
 			        	<div className="p-2">
 			        		<a className="m-0 navbar-brand " href="#">
-					            <img src="/public/images/otito-logo_burned.png" width="50" height="35" className="p-0 d-inline-block" alt=""/>
+					            <img src="/public/images/otito-logo_burned.png" width="50" height="35" className="p-0 d-inline-block" alt="profile-pic"/>
 					        </a>
 			        	</div>
 			        	<div className="p-2">
