@@ -13,18 +13,27 @@ export default class Footer extends React.Component {
 	render() {
 	
 		return (
-			<footer className="footer">
-				<div className="container">
-					<div className="d-flex justify-content-center">	
-						<div className="p-2 social-media">
-							<img className="m-0 img-fluid social-media-icon" src="/public/images/facebook.png" alt="facebook"/> 
+			<footer className="footer p-8">
+				<div className="container-fluid">
+					<div className="d-flex justify-content-between">	
+						<div className="p-2"></div>
+						<div className="p-2">
+							<p className="center-content-v">© 2018 òtító. All rights reserved.</p>
+						{/*
+							<div className=" social-media">
+								<img className="m-0 img-fluid social-media-icon" src="/public/images/facebook.png" alt="facebook"/> 
+							</div>
+							<div className=" social-media">
+								<img className="m-0 img-fluid social-media-icon" src="/public/images/linkedin.png" alt="linkedin"/>
+							</div>
+							<div className="social-media">
+								<img className="m-0 img-fluid social-media-icon" src="/public/images/twitter.png" alt="twitter"/>
+							</div>
+						*/}
 						</div>
-						<div className="p-2 social-media">
-							<img className="m-0 img-fluid social-media-icon" src="/public/images/linkedin.png" alt="linkedin"/>
+						<div className="p-2">
+							<span className="footer-text">òtító</span>
 						</div>
-						<div className="p-2 social-media">
-							<img className="m-0 img-fluid social-media-icon" src="/public/images/twitter.png" alt="twitter"/>
-						</div>	
 					</div>
 				</div>
 			</footer>

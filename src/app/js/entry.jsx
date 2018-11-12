@@ -21,7 +21,7 @@ class App extends React.Component {
           <div className="d-flex flex-column bd-highlight main-wrapper">
             <div className="p-2"> <Header/> </div>
             <div className=""><Body/></div>
-            <div className="mt-auto p-2 bd-highlight"><Footer/></div>
+            <div className="p-0"><Footer/></div>
           </div>
             
         </Router>

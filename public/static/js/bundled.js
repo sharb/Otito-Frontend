@@ -2203,7 +2203,7 @@ var App = function (_React$Component) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'mt-auto p-2 bd-highlight' },
+              { className: 'p-0' },
               _react2.default.createElement(_footer2.default, null)
             )
           )
@@ -23468,7 +23468,7 @@ var Header = function (_React$Component) {
 							_react2.default.createElement(
 								'h3',
 								null,
-								'otito'
+								'\xF2t\xEDt\xF3'
 							)
 						)
 					),
@@ -26114,27 +26114,31 @@ var Footer = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'footer',
-				{ className: 'footer' },
+				{ className: 'footer p-8' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'container' },
+					{ className: 'container-fluid' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'd-flex justify-content-center' },
+						{ className: 'd-flex justify-content-between' },
+						_react2.default.createElement('div', { className: 'p-2' }),
 						_react2.default.createElement(
 							'div',
-							{ className: 'p-2 social-media' },
-							_react2.default.createElement('img', { className: 'm-0 img-fluid social-media-icon', src: '/public/images/facebook.png', alt: 'facebook' })
+							{ className: 'p-2' },
+							_react2.default.createElement(
+								'p',
+								{ className: 'center-content-v' },
+								'\xA9 2018 \xF2t\xEDt\xF3. All rights reserved.'
+							)
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'p-2 social-media' },
-							_react2.default.createElement('img', { className: 'm-0 img-fluid social-media-icon', src: '/public/images/linkedin.png', alt: 'linkedin' })
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'p-2 social-media' },
-							_react2.default.createElement('img', { className: 'm-0 img-fluid social-media-icon', src: '/public/images/twitter.png', alt: 'twitter' })
+							{ className: 'p-2' },
+							_react2.default.createElement(
+								'span',
+								{ className: 'footer-text' },
+								'\xF2t\xEDt\xF3'
+							)
 						)
 					)
 				)

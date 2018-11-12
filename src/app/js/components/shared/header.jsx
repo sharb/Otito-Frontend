@@ -27,7 +27,7 @@ export default class Header extends React.Component {
 					        </a>
 			        	</div>
 			        	<div className="p-2">
-			        		<h3>otito</h3>
+			        		<h3>òtító</h3>
 			        	</div>
 			        </div>
 					        

@@ -41,6 +41,16 @@
   height: 30px;
 }
 
+.footer {
+  background-color: #3c3c3c;
+  color: #ececec;
+}
+.footer .footer-text {
+  color: #7add7b;
+  font-weight: 800;
+  font-size: 25px;
+}
+
 .home-header {
   z-index: 10;
   position: relative;
