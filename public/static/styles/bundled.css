@@ -88,6 +88,12 @@
   column-gap: 0px;
 }
 
+.upscribe-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 html, body {
   height: 100%;
   font-size: 100%;

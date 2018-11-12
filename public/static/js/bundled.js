@@ -26355,9 +26355,8 @@ var Home = function (_React$Component) {
 									{ className: 'col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'input-group  searchbar-col ' },
-										_react2.default.createElement('input', { type: 'text', className: 'searchbar form-control form-control-lg', placeholder: 'Search for the truth about anything...', 'aria-label': 'truth' }),
-										_react2.default.createElement('span', { className: 'fas fa-search searchbar-icon' })
+										{ className: 'input-group upscribe-col ' },
+										_react2.default.createElement('iframe', { src: 'https://upscri.be/fe37e0?as_embed', height: '400', frameborder: '0', className: 'upscribe-form' })
 									)
 								)
 							)
@@ -26365,7 +26364,7 @@ var Home = function (_React$Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'col-3' },
-							_react2.default.createElement('img', { src: '/public/images/people.png', id: 'home-people-img', alt: 'Responsive image' })
+							_react2.default.createElement('img', { src: '/public/images/peopletest.png', id: 'home-people-img', alt: 'Responsive image' })
 						)
 					)
 				)
