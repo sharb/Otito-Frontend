@@ -1,6 +1,13 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+
+
+
+
+
+
+
 export default class Home extends React.Component {
 
 
@@ -21,7 +28,9 @@ export default class Home extends React.Component {
 							<div className="col-12">
 								<div className="row">
 									<div className="offset-1 col-10">
-										<h1 className="home-header" align="center">Society's most democratic tool for documenting and sharing objectively verifable political truth</h1>
+										<h1 className="line1 home-header">Society's most democratic tool for</h1>
+										<h1 className="line2 home-header">documenting and sharing objectively verifable</h1>
+										<h1 className="line3 home-header">political truth</h1>
 									</div>
 									<div className="offset-3 col-6">
 										<div className="input-group upscribe-col ">
@@ -65,4 +74,3 @@ export default class Home extends React.Component {
 
 	
 }
-

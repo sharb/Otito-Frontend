@@ -44,6 +44,120 @@
 .home-header {
   z-index: 10;
   position: relative;
+  letter-spacing: 0.1em;
+  /* Adjust as needed */
+}
+
+.typewriter {
+  /* The typewriter cursor effect */
+}
+.typewriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid transparent;
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+}
+.typewriter .line1 {
+  -webkit-animation: type 3s steps(40, end);
+  animation: type 3s steps(40, end), blinking-cursor 4s;
+}
+.typewriter .line2 {
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type2 3s steps(60, end), blinking-cursor 4s;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+.typewriter span {
+  animation: blink 1s infinite;
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blinking-cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 .slide {
@@ -65,14 +179,17 @@
 
 .slide-two {
   background-image: url("/public/images/backgrounds/blues.jpg");
+  color: white;
 }
 
 .slide-three {
   background-image: url("/public/images/backgrounds/cocoa.jpg");
+  color: white;
 }
 
 .slide-four {
   background-image: url("/public/images/backgrounds/subu.jpg");
+  color: white;
 }
 
 .home-text {

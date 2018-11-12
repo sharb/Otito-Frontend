@@ -2,7 +2,13 @@
 .home-header{
 	z-index: 10;
 	position:relative;
+	letter-spacing: .10em; /* Adjust as needed */
 }
+
+
+
+
+
 
 
 .slide{
@@ -31,14 +37,17 @@
 
 .slide-two{
 	background-image: url("/public/images/backgrounds/blues.jpg");
+	color: white;
 }
 
 .slide-three{
 	background-image: url("/public/images/backgrounds/cocoa.jpg");
+	color: white;
 }
 
 .slide-four{
 	background-image: url("/public/images/backgrounds/subu.jpg");
+	color: white;
 }
 
 
