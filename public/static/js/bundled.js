@@ -26306,7 +26306,12 @@ var About = function (_React$Component) {
 							{ className: 'offset-3 col-6' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'center-content-v' },
+								{ className: '' },
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
 								_react2.default.createElement(
 									'h3',
 									null,
@@ -27616,23 +27621,28 @@ var Mission = function (_React$Component) {
 						{ className: 'row' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'offset-2 col-8' },
-							_react2.default.createElement('br', null),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement('br', null),
+							{ className: 'offset-3 col-6' },
 							_react2.default.createElement(
-								'h3',
-								null,
-								'Mission Statement'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
+								'div',
+								{ className: '' },
 								_react2.default.createElement('br', null),
 								_react2.default.createElement('br', null),
-								'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement(
+									'h3',
+									null,
+									'Mission Statement'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
+									_react2.default.createElement('br', null),
+									_react2.default.createElement('br', null),
+									'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
+								)
 							)
 						)
 					)

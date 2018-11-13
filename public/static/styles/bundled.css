@@ -69,7 +69,11 @@
 }
 .slide .slide-description {
   padding: 40px;
+}
+.slide .slide-description p {
   color: #e5e5e5;
+  font-weight: 600;
+  font-size: 20px;
 }
 .slide img {
   margin: 20px;

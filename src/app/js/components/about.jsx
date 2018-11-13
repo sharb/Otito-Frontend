@@ -17,7 +17,8 @@ export default class About extends React.Component {
 				<div className="d-flex full-width-container">
 					<div className="row">
 						<div className="offset-3 col-6">
-							<div className="center-content-v">
+							<div className="">
+								<br/><br/><br/><br/><br/>
 								<h3>The world’s Platform for creating shared narratives of truth</h3>
 								<p>
 									The world is creating way more information than it knows how to handle. This is breaking society apart—especially at political, cultural and policy levels. 
