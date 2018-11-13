@@ -18,7 +18,7 @@ export default class Header extends React.Component {
 		return (
 
 			
-			<nav id="main-navbar" className="pt-5 p-0 navbar navbar-expand-lg navbar-light bg-white">
+			<nav id="main-navbar" className="navbar navbar-expand-lg navbar-light bg-white center-content-v">
 				<div className="p-0 container">
 			        <div className="d-flex align-items-center">
 			        	<div className="p-2">

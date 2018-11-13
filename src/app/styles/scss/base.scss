@@ -7,9 +7,28 @@ $main-green: #7fe8b9;
 @import 'topic.scss';
 @import 'footer.scss';
 @import 'home.scss';
+@import 'home_scroll.scss';
 @import 'join.scss';
 
 
+.main-header{
+  height: 10vh;
+   max-height: 10vh;
+//  border: 2px solid blue;
+  z-index: 100;
+}
+
+.main-body{
+  height: 70%;
+  max-height: 70%;
+ //  border: 2px solid blue;
+}
+
+.main-footer{
+  height: 5vh;
+   max-height: 5vh;
+   //border: 2px solid blue;
+}
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap

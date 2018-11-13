@@ -8,7 +8,7 @@ import ScrollSnap from 'scroll-snap'
 import Waypoint from 'react-waypoint';
 
 
-
+import Header from "./shared/header.jsx";
 
 
 
@@ -29,11 +29,13 @@ export default class Home extends React.Component {
 
 	render() {
 	
+
 		return (
 
-			<div id="snap-container" ref={this.snapcontainer}>
-				<div className="page first-page slide slide-one d-flex">
-					<div className="">
+		
+			<span>
+				<section id="section01">
+				  	<div className="d-flex slide slide-one">
 						<div className="row ">
 							<div className="col-12">
 								<div className="row">
@@ -49,15 +51,18 @@ export default class Home extends React.Component {
 									</div>
 								</div>
 							</div>
-		
+							<div className="col-12">
+								<a href="#section02"><span>
+				  				</span>Scroll</a>
+				  			</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<Waypoint
-				  onEnter={this._handleWaypointEnter}
-				  onLeave={this._handleWaypointLeave}
-				/>
+
+
+
+				
 	
 			    <div className="page second-page slide slide-two">
 				    <img src="/public/images/screenshots/simple_view.png" width="800"  className="img-fluid img-thumbnail float-left" alt=""/>				       
@@ -73,7 +78,8 @@ export default class Home extends React.Component {
 			        	<p> òtító empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust </p>
 			        </div>
 			    </div>
-			</div>
+
+			</span>
 			
 		
 		);
@@ -81,6 +87,15 @@ export default class Home extends React.Component {
 
 	
 }
+
+
+{/* https://codepen.io/nxworld/pen/OyRrGy */}
+//$(function() {
+// $('a[href*=#]').on('click', function(e) {
+//    e.preventDefault();
+ //   $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+ // });
+//});
 
 
 {/*
@@ -108,22 +123,3 @@ this.state = {
  }
 (*/}
 
-// ES6
-function debounced(delay, fn) {
-  let timerId;
-  return function (...args) {
-    if (timerId) {
-      clearTimeout(timerId);
-    }
-    timerId = setTimeout(() => {
-      fn(...args);
-      timerId = null;
-    }, delay);
-  }
-}
-
-
-
-const myHandler = (event) => function(){console.log("stopped")}// do something with the event
-const dHandler = debounced(200, myHandler);
-window.addEventListener("scroll", dHandler);

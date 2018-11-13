@@ -31,9 +31,9 @@ class App extends React.Component {
 
    
           <div className="d-flex flex-column bd-highlight main-wrapper">
-            <div className="p-2"> <Header/> </div>
-            <div className=""><Body/></div>
-            <div className="p-0"><Footer/></div>
+            <div className="main-header"> <Header/> </div>
+            <div className="main-body"><Body/></div>
+            <div className="main-footer"><Footer/></div>
           </div>
             
 

@@ -2207,19 +2207,19 @@ var App = function (_React$Component) {
           { className: 'd-flex flex-column bd-highlight main-wrapper' },
           _react2.default.createElement(
             'div',
-            { className: 'p-2' },
+            { className: 'main-header' },
             ' ',
             _react2.default.createElement(_header2.default, null),
             ' '
           ),
           _react2.default.createElement(
             'div',
-            { className: '' },
+            { className: 'main-body' },
             _react2.default.createElement(_body2.default, null)
           ),
           _react2.default.createElement(
             'div',
-            { className: 'p-0' },
+            { className: 'main-footer' },
             _react2.default.createElement(_footer2.default, null)
           )
         )
@@ -23474,7 +23474,7 @@ var Header = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'nav',
-				{ id: 'main-navbar', className: 'pt-5 p-0 navbar navbar-expand-lg navbar-light bg-white' },
+				{ id: 'main-navbar', className: 'navbar navbar-expand-lg navbar-light bg-white center-content-v' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'p-0 container' },
@@ -26293,32 +26293,36 @@ var About = function (_React$Component) {
 		value: function render() {
 
 			return _react2.default.createElement(
-				'div',
-				{ className: 'd-flex full-width-container' },
+				'section',
+				{ className: 'section-sub' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'row' },
+					{ className: 'd-flex full-width-container' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'offset-3 col-6' },
+						{ className: 'row' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'center-content-v' },
+							{ className: 'offset-3 col-6' },
 							_react2.default.createElement(
-								'h3',
-								null,
-								'The world\u2019s Platform for creating shared narratives of truth'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'The world is creating way more information than it knows how to handle. This is breaking society apart\u2014especially at political, cultural and policy levels.',
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								'We believe we have devised a solution to this\u2014a platform that will be the new way trustworthy information is generated and disseminated online. No longer will people have to worry about issues of fake news on platforms like Facebook and other social media\u2014or of bias and political affiliations/agendas with traditional news media.',
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								'As information becomes highly commodified and devalued, we believe people will place more value on less information of unquestionable reliability\u2014than on more information of questionable truthfulness.'
+								'div',
+								{ className: 'center-content-v' },
+								_react2.default.createElement(
+									'h3',
+									null,
+									'The world\u2019s Platform for creating shared narratives of truth'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'The world is creating way more information than it knows how to handle. This is breaking society apart\u2014especially at political, cultural and policy levels.',
+									_react2.default.createElement('br', null),
+									_react2.default.createElement('br', null),
+									'We believe we have devised a solution to this\u2014a platform that will be the new way trustworthy information is generated and disseminated online. No longer will people have to worry about issues of fake news on platforms like Facebook and other social media\u2014or of bias and political affiliations/agendas with traditional news media.',
+									_react2.default.createElement('br', null),
+									_react2.default.createElement('br', null),
+									'As information becomes highly commodified and devalued, we believe people will place more value on less information of unquestionable reliability\u2014than on more information of questionable truthfulness.'
+								)
 							)
 						)
 					)
@@ -26359,6 +26363,10 @@ var _reactWaypoint = __webpack_require__(67);
 
 var _reactWaypoint2 = _interopRequireDefault(_reactWaypoint);
 
+var _header = __webpack_require__(35);
+
+var _header2 = _interopRequireDefault(_header);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26384,14 +26392,14 @@ var Home = function (_React$Component) {
 		value: function render() {
 
 			return _react2.default.createElement(
-				'div',
-				{ id: 'snap-container', ref: this.snapcontainer },
+				'span',
+				null,
 				_react2.default.createElement(
-					'div',
-					{ className: 'page first-page slide slide-one d-flex' },
+					'section',
+					{ id: 'section01' },
 					_react2.default.createElement(
 						'div',
-						{ className: '' },
+						{ className: 'd-flex slide slide-one' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'row ' },
@@ -26442,14 +26450,20 @@ var Home = function (_React$Component) {
 										)
 									)
 								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-12' },
+								_react2.default.createElement(
+									'a',
+									{ href: '#section02' },
+									_react2.default.createElement('span', null),
+									'Scroll'
+								)
 							)
 						)
 					)
 				),
-				_react2.default.createElement(_reactWaypoint2.default, {
-					onEnter: this._handleWaypointEnter,
-					onLeave: this._handleWaypointLeave
-				}),
 				_react2.default.createElement(
 					'div',
 					{ className: 'page second-page slide slide-two' },
@@ -26498,54 +26512,37 @@ var Home = function (_React$Component) {
 exports.default = Home;
 
 
-{} /*
-   this.state = {
-        	scrollStatus:''
-       };
-       this._timeout = null;
-       this.handleScroll = this.handleScroll.bind(this);
-   
-    if(this._timeout){ //if there is already a timeout in process cancel it
-    clearTimeout(this._timeout);
-   }
-   this._timeout = setTimeout(() => {
+{} /* https://codepen.io/nxworld/pen/OyRrGy */
+//$(function() {
+// $('a[href*=#]').on('click', function(e) {
+//    e.preventDefault();
+//   $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+// });
+//});
+
+
+{/*
+ this.state = {
+      	scrollStatus:''
+     };
      this._timeout = null;
-     this.setState({
-       scrollStatus:'scroll stopped'
-     });
-   },1000);
-   if(this.state.scrollStatus !== 'scrolling') {
-     this.setState({
-       scrollStatus:'scrolling'
-     });
-   }
-   (*/
-
-// ES6
-function debounced(delay, fn) {
-	var timerId = void 0;
-	return function () {
-		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-			args[_key] = arguments[_key];
-		}
-
-		if (timerId) {
-			clearTimeout(timerId);
-		}
-		timerId = setTimeout(function () {
-			fn.apply(undefined, args);
-			timerId = null;
-		}, delay);
-	};
-}
-
-var myHandler = function myHandler(event) {
-	return function () {
-		console.log("stopped");
-	};
-}; // do something with the event
-var dHandler = debounced(200, myHandler);
-window.addEventListener("scroll", dHandler);
+     this.handleScroll = this.handleScroll.bind(this);
+ 
+  if(this._timeout){ //if there is already a timeout in process cancel it
+  clearTimeout(this._timeout);
+ }
+ this._timeout = setTimeout(() => {
+   this._timeout = null;
+   this.setState({
+     scrollStatus:'scroll stopped'
+   });
+ },1000);
+ if(this.state.scrollStatus !== 'scrolling') {
+   this.setState({
+     scrollStatus:'scrolling'
+   });
+ }
+ (*/}
 
 /***/ }),
 /* 66 */
@@ -27483,42 +27480,46 @@ var Join = function (_React$Component) {
 		value: function render() {
 
 			return _react2.default.createElement(
-				'div',
-				{ className: 'full-width-container d-flex' },
+				'section',
+				{ className: 'section-sub' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'mt-5' },
+					{ className: 'full-width-container d-flex' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'row mt-5' },
+						{ className: 'mt-5' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-12' },
+							{ className: 'row mt-5' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'row' },
+								{ className: 'col-12' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'offset-3 col-6 join-me-text' },
-									_react2.default.createElement(
-										'h3',
-										{ align: 'center' },
-										'Join us on our journey to generating & disseminating ',
-										_react2.default.createElement(
-											'i',
-											null,
-											'only'
-										),
-										' trustworthy information. Get exclusive updates and upcoming features of the \xF2t\xEDt\xF3 platorm!'
-									)
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'offset-3 col-6' },
+									{ className: 'row' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'input-group upscribe-col' },
-										_react2.default.createElement('iframe', { src: 'https://upscri.be/fe37e0?as_embed', height: '275', frameBorder: '0', className: 'upscribe-form-join' })
+										{ className: 'offset-3 col-6 join-me-text' },
+										_react2.default.createElement(
+											'h3',
+											{ align: 'center' },
+											'Join us on our journey to generating & disseminating ',
+											_react2.default.createElement(
+												'i',
+												null,
+												'only'
+											),
+											' trustworthy information. Get exclusive updates and upcoming features of the \xF2t\xEDt\xF3 platorm!'
+										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'offset-3 col-6' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'input-group upscribe-col' },
+											_react2.default.createElement('iframe', { src: 'https://upscri.be/fe37e0?as_embed', height: '275', frameBorder: '0', className: 'upscribe-form-join' })
+										)
 									)
 								)
 							)
@@ -27576,25 +27577,29 @@ var Mission = function (_React$Component) {
 		value: function render() {
 
 			return _react2.default.createElement(
-				'div',
-				{ className: 'd-flex' },
+				'section',
+				{ className: 'section-sub' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'row' },
+					{ className: 'd-flex' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'offset-3 col-6' },
+						{ className: 'row' },
 						_react2.default.createElement(
-							'h3',
-							null,
-							'Mission Statement'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
-							_react2.default.createElement('br', null),
-							'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
+							'div',
+							{ className: 'offset-3 col-6' },
+							_react2.default.createElement(
+								'h3',
+								null,
+								'Mission Statement'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
+								_react2.default.createElement('br', null),
+								'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
+							)
 						)
 					)
 				)
