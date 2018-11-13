@@ -57,8 +57,6 @@
 .home-header {
   z-index: 10;
   position: relative;
-  letter-spacing: 0.1em;
-  /* Adjust as needed */
 }
 
 .page {

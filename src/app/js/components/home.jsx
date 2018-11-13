@@ -38,9 +38,9 @@ export default class Home extends React.Component {
 							<div className="col-12">
 								<div className="row">
 									<div className="offset-1 col-10 home-description">
-										<h1 className="line1 home-header">Society's most democratic tool for</h1>
-										<h1 className="line2 home-header">documenting and sharing objectively verifable</h1>
-										<h1 className="line3 home-header">political truth</h1>
+											<h1 className="line1 home-header"><strong>Society's most democratic tool for</strong></h1>
+											<h1 className="line2 home-header"><strong>documenting and sharing objectively verifable</strong></h1>
+											<h1 className="line3 home-header"><strong>political truth</strong></h1>
 									</div>
 									<div className="offset-3 col-6">
 										<div className="input-group upscribe-col ">

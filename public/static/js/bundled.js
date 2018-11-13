@@ -2160,6 +2160,22 @@ var _body2 = _interopRequireDefault(_body);
 
 var _reactRouterDom = __webpack_require__(13);
 
+var _about = __webpack_require__(64);
+
+var _about2 = _interopRequireDefault(_about);
+
+var _home = __webpack_require__(65);
+
+var _home2 = _interopRequireDefault(_home);
+
+var _join = __webpack_require__(71);
+
+var _join2 = _interopRequireDefault(_join);
+
+var _mission = __webpack_require__(73);
+
+var _mission2 = _interopRequireDefault(_mission);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2167,6 +2183,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// pages
+
 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
@@ -2184,28 +2203,24 @@ var App = function (_React$Component) {
         'span',
         null,
         _react2.default.createElement(
-          _reactRouterDom.BrowserRouter,
-          null,
+          'div',
+          { className: 'd-flex flex-column bd-highlight main-wrapper' },
           _react2.default.createElement(
             'div',
-            { className: 'd-flex flex-column bd-highlight main-wrapper' },
-            _react2.default.createElement(
-              'div',
-              { className: 'p-2' },
-              ' ',
-              _react2.default.createElement(_header2.default, null),
-              ' '
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: '' },
-              _react2.default.createElement(_body2.default, null)
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'p-0' },
-              _react2.default.createElement(_footer2.default, null)
-            )
+            { className: 'p-2' },
+            ' ',
+            _react2.default.createElement(_header2.default, null),
+            ' '
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: '' },
+            _react2.default.createElement(_body2.default, null)
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'p-0' },
+            _react2.default.createElement(_footer2.default, null)
           )
         )
       );
@@ -2215,7 +2230,20 @@ var App = function (_React$Component) {
   return App;
 }(_react2.default.Component);
 
-(0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
+var routes = _react2.default.createElement(
+  _reactRouterDom.Route,
+  { component: App, path: '/' },
+  _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
+  _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/join', component: _join2.default }),
+  _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
+  _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/mission', component: _mission2.default })
+);
+
+(0, _reactDom.render)(_react2.default.createElement(
+  _reactRouterDom.BrowserRouter,
+  null,
+  routes
+), document.getElementById('app'));
 
 /***/ }),
 /* 26 */
@@ -26383,17 +26411,29 @@ var Home = function (_React$Component) {
 										_react2.default.createElement(
 											'h1',
 											{ className: 'line1 home-header' },
-											'Society\'s most democratic tool for'
+											_react2.default.createElement(
+												'strong',
+												null,
+												'Society\'s most democratic tool for'
+											)
 										),
 										_react2.default.createElement(
 											'h1',
 											{ className: 'line2 home-header' },
-											'documenting and sharing objectively verifable'
+											_react2.default.createElement(
+												'strong',
+												null,
+												'documenting and sharing objectively verifable'
+											)
 										),
 										_react2.default.createElement(
 											'h1',
 											{ className: 'line3 home-header' },
-											'political truth'
+											_react2.default.createElement(
+												'strong',
+												null,
+												'political truth'
+											)
 										)
 									),
 									_react2.default.createElement(
@@ -27543,16 +27583,24 @@ var Mission = function (_React$Component) {
 				'div',
 				{ className: 'd-flex' },
 				_react2.default.createElement(
-					'h3',
-					null,
-					'Mission Statement'
-				),
-				_react2.default.createElement(
-					'p',
-					null,
-					'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
-					_react2.default.createElement('br', null),
-					'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
+					'div',
+					{ className: 'row' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'offset-3 col-6' },
+						_react2.default.createElement(
+							'h3',
+							null,
+							'Mission Statement'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
+							_react2.default.createElement('br', null),
+							'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
+						)
+					)
 				)
 			);
 		}

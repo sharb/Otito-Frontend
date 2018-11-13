@@ -14,14 +14,11 @@ app.config['DEBUG'] = True
 
 
 
-@app.route("/", methods=["GET"])
-def index():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
 	return render_template('index.html')
 
-
-@app.route("/topics", methods=["GET"])
-def topics():
-	return render_template('index.html')
 
 
 

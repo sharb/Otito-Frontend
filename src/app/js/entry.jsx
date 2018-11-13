@@ -10,6 +10,18 @@ import {
 } from 'react-router-dom';
 
 
+
+
+// pages
+import About from './components/about.jsx';
+import Home from './components/home.jsx';
+import Join from './components/join.jsx';
+import Mission from './components/mission.jsx';
+
+
+
+
+
 class App extends React.Component {
   render () {
     return (
@@ -17,21 +29,34 @@ class App extends React.Component {
        
        
 
-        <Router>
+   
           <div className="d-flex flex-column bd-highlight main-wrapper">
             <div className="p-2"> <Header/> </div>
             <div className=""><Body/></div>
             <div className="p-0"><Footer/></div>
           </div>
             
-        </Router>
+
        
       </span>
     );
   }
 }
 
-render(<App/>, document.getElementById('app'));
+let routes = (
+<Route component={App} path='/'>
+    <Route exact path='/' component={Home}/>
+    <Route exact path='/join' component={Join}/>
+    <Route exact path='/about' component={About}/>
+    <Route exact path='/mission' component={Mission}/>
+</Route>
+);
+
+
+
+
+
+render(<Router>{routes}</Router>, document.getElementById('app'));
 
 
 
