@@ -1,3 +1,6 @@
+#main-navbar {
+  height: 114px !important;
+}
 #main-navbar .menu-item {
   padding: 0px;
   margin-left: 15px !important;
@@ -208,7 +211,7 @@ html, body {
 }
 
 .full-width-container {
-  height: 100vh;
+  height: calc(100vh - 180px);
 }
 
 /*# sourceMappingURL=bundled.css.map */
