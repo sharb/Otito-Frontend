@@ -29,6 +29,14 @@
 
 }
 
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item:hover .nav-link {
+    color: black;
+    font-weight: 800;
+}
+
 
 .active-tab {
 	font-weight: 900;
