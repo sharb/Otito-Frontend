@@ -18,7 +18,7 @@ export default class Header extends React.Component {
 		return (
 
 			
-			<nav id="main-navbar" className="navbar navbar-expand-lg navbar-light bg-white center-content-v">
+			<nav id="main-navbar" className="navbar navbar-expand-lg navbar-light bg-white">
 				<div className="p-0 container">
 			        <div className="d-flex align-items-center">
 			        	<div className="p-2">
@@ -50,7 +50,7 @@ export default class Header extends React.Component {
 						                <Link to="/about" className="nav-link m-2 menu-item">ABOUT</Link>
 						            </li>
 						            <li className="nav-item">
-						                <Link to="/about" className="nav-link m-2 menu-item">MISSION</Link>
+						                <Link to="/mission" className="nav-link m-2 menu-item">MISSION</Link>
 						            </li>
 						        </ul>
 						    </div>

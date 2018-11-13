@@ -35,11 +35,12 @@ export default class Home extends React.Component {
 		
 			<span>
 				<section id="section01">
-				  	<div className="d-flex slide slide-one">
-						<div className="row ">
+				  	<div className="p-0 slide slide-one">
+						<div className="row">
 							<div className="col-12">
 								<div className="row">
-									<div className="offset-1 col-10 home-description">
+									<div className="col-12 home-description">
+										<br/><br/><br/><br/>
 											<h1 className="line1 home-header"><strong>Society's most democratic tool for</strong></h1>
 											<h1 className="line2 home-header"><strong>documenting and sharing objectively verifable</strong></h1>
 											<h1 className="line3 home-header"><strong>political truth</strong></h1>
@@ -51,36 +52,48 @@ export default class Home extends React.Component {
 									</div>
 								</div>
 							</div>
-							<div className="col-12">
-								<a href="#section02"><span>
-				  				</span>Scroll</a>
-				  			</div>
 						</div>
+					</div>
+					<div className="d-flex align-items-center">
+						<a href="#section02"><span>
+				  		</span>See More</a>
 					</div>
 				</section>
 
 
-
-
 				
-				<section id="section02" className="section-body">
-				    <div className="page second-page slide slide-two">
-					    <img src="/public/images/screenshots/simple_view.png" width="800"  className="img-fluid img-thumbnail float-left" alt=""/>				       
+				<section id="section02" className="p-0 section-body">
+					<div className="p-0 d-flex align-items-center slide slide-two">
+						<img src="/public/images/screenshots/simple_view.png" width="800" height="550" className="img-fluid img-thumbnail float-left" alt=""/>				       
 					    <div className="slide-description">
 					    	<h2>Explore nuances in the truth consensus on any topic</h2>
 				        	<p>òtító lets you solicit or contribute objectively verifiable truths to discussions about difficult topics in society.</p>
 				    	</div>
-				    </div>
+						<div className="bd-highlight">
+
+							<a href="#section03"><span>
+				  				</span></a>
+				  		
+						</div>
+					</div>
 				</section>
-				<section id="section03" className="section-sub2">
-				    <div className="page third-page slide slide-three">
-				    	<img src="/public/images/screenshots/contributer_view.png" width="800"  className="img-fluid img-thumbnail float-right" alt=""/>
-				        <div className="slide-description">
-				        	<h2>Take back control of how key issues are framed</h2>
+				<section id="section03" className="p-0 m-0 section-body">
+					<div className="p-0 d-flex align-items-center slide slide-three">
+						<img src="/public/images/screenshots/contributer_view.png" width="800" height="550" className="img-fluid img-thumbnail float-right" alt=""/>				       
+					    <div className="slide-description">
+					    	<h2>Take back control of how key issues are framed</h2>
 				        	<p> òtító empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust </p>
-				        </div>
-				    </div>
+						</div>
+						<div className="bd-highlight">
+
+							<a href="#section01"><span>
+				  				</span></a>
+				  		
+						</div>
+					</div>
 				</section>
+
+				
 			</span>
 			
 		
@@ -92,12 +105,12 @@ export default class Home extends React.Component {
 
 
 {/* https://codepen.io/nxworld/pen/OyRrGy */}
-//$(function() {
-// $('a[href*=#]').on('click', function(e) {
-//    e.preventDefault();
- //   $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
- // });
-//});
+$(function() {
+$('section div a').on('click', function(e) {
+   e.preventDefault();
+   $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+ });
+});
 
 
 {/*

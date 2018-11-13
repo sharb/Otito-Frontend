@@ -23474,7 +23474,7 @@ var Header = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'nav',
-				{ id: 'main-navbar', className: 'navbar navbar-expand-lg navbar-light bg-white center-content-v' },
+				{ id: 'main-navbar', className: 'navbar navbar-expand-lg navbar-light bg-white' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'p-0 container' },
@@ -23553,7 +23553,7 @@ var Header = function (_React$Component) {
 										{ className: 'nav-item' },
 										_react2.default.createElement(
 											_reactRouterDom.Link,
-											{ to: '/about', className: 'nav-link m-2 menu-item' },
+											{ to: '/mission', className: 'nav-link m-2 menu-item' },
 											'MISSION'
 										)
 									)
@@ -26399,10 +26399,10 @@ var Home = function (_React$Component) {
 					{ id: 'section01' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'd-flex slide slide-one' },
+						{ className: 'p-0 slide slide-one' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'row ' },
+							{ className: 'row' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'col-12' },
@@ -26411,7 +26411,11 @@ var Home = function (_React$Component) {
 									{ className: 'row' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'offset-1 col-10 home-description' },
+										{ className: 'col-12 home-description' },
+										_react2.default.createElement('br', null),
+										_react2.default.createElement('br', null),
+										_react2.default.createElement('br', null),
+										_react2.default.createElement('br', null),
 										_react2.default.createElement(
 											'h1',
 											{ className: 'line1 home-header' },
@@ -26450,27 +26454,27 @@ var Home = function (_React$Component) {
 										)
 									)
 								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'col-12' },
-								_react2.default.createElement(
-									'a',
-									{ href: '#section02' },
-									_react2.default.createElement('span', null),
-									'Scroll'
-								)
 							)
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'd-flex align-items-center' },
+						_react2.default.createElement(
+							'a',
+							{ href: '#section02' },
+							_react2.default.createElement('span', null),
+							'See More'
 						)
 					)
 				),
 				_react2.default.createElement(
 					'section',
-					{ id: 'section02', className: 'section-body' },
+					{ id: 'section02', className: 'p-0 section-body' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'page second-page slide slide-two' },
-						_react2.default.createElement('img', { src: '/public/images/screenshots/simple_view.png', width: '800', className: 'img-fluid img-thumbnail float-left', alt: '' }),
+						{ className: 'p-0 d-flex align-items-center slide slide-two' },
+						_react2.default.createElement('img', { src: '/public/images/screenshots/simple_view.png', width: '800', height: '550', className: 'img-fluid img-thumbnail float-left', alt: '' }),
 						_react2.default.createElement(
 							'div',
 							{ className: 'slide-description' },
@@ -26484,16 +26488,25 @@ var Home = function (_React$Component) {
 								null,
 								'\xF2t\xEDt\xF3 lets you solicit or contribute objectively verifiable truths to discussions about difficult topics in society.'
 							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'bd-highlight' },
+							_react2.default.createElement(
+								'a',
+								{ href: '#section03' },
+								_react2.default.createElement('span', null)
+							)
 						)
 					)
 				),
 				_react2.default.createElement(
 					'section',
-					{ id: 'section03', className: 'section-sub2' },
+					{ id: 'section03', className: 'p-0 m-0 section-body' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'page third-page slide slide-three' },
-						_react2.default.createElement('img', { src: '/public/images/screenshots/contributer_view.png', width: '800', className: 'img-fluid img-thumbnail float-right', alt: '' }),
+						{ className: 'p-0 d-flex align-items-center slide slide-three' },
+						_react2.default.createElement('img', { src: '/public/images/screenshots/contributer_view.png', width: '800', height: '550', className: 'img-fluid img-thumbnail float-right', alt: '' }),
 						_react2.default.createElement(
 							'div',
 							{ className: 'slide-description' },
@@ -26506,6 +26519,15 @@ var Home = function (_React$Component) {
 								'p',
 								null,
 								' \xF2t\xEDt\xF3 empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust '
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'bd-highlight' },
+							_react2.default.createElement(
+								'a',
+								{ href: '#section01' },
+								_react2.default.createElement('span', null)
 							)
 						)
 					)
@@ -26520,14 +26542,13 @@ var Home = function (_React$Component) {
 exports.default = Home;
 
 
-{} /* https://codepen.io/nxworld/pen/OyRrGy */
-//$(function() {
-// $('a[href*=#]').on('click', function(e) {
-//    e.preventDefault();
-//   $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-// });
-//});
-
+{/* https://codepen.io/nxworld/pen/OyRrGy */}
+$(function () {
+	$('section div a').on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+	});
+});
 
 {/*
  this.state = {
@@ -27589,13 +27610,17 @@ var Mission = function (_React$Component) {
 				{ className: 'section-sub' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'd-flex' },
+					{ className: 'd-flex full-width-container' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'row' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'offset-3 col-6' },
+							{ className: 'offset-2 col-8' },
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('br', null),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -27605,6 +27630,7 @@ var Mission = function (_React$Component) {
 								'p',
 								null,
 								'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
+								_react2.default.createElement('br', null),
 								_react2.default.createElement('br', null),
 								'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
 							)

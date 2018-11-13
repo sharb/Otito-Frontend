@@ -20,7 +20,7 @@ section {
   max-height: 90vh;
   a {
     position: absolute;
-    bottom: 20px;
+    bottom: 70px;
     left: 50%;
     z-index: 2;
     display: inline-block;
@@ -53,18 +53,18 @@ section {
 
 // page with only body section
 .section-body{
-  height: 110vh;
-  max-height:110vh;
+  height: 100vh;
+  max-height:100vh;
 }
 
 
 section::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100vh;
+  //position: absolute;
+  //bottom: 0;
+  //left: 0;
+  //content: '';
+  //width: 100%;
+  //height: 100vh;
   //background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   //background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
@@ -85,13 +85,14 @@ section::after {
 
 
 
-#section01 a {
-  padding-top: 60px;
+#section01 div a {
   color: black;
+  margin-left: -50px;
+  text-decoration:none;
 }
-#section01 a span {
+#section01 div a span {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -106,17 +107,15 @@ section::after {
 
 
 
-#section02 a {
-  padding-top: 60px;
-}
-#section02 a span {
+
+#section02 div a span {
   position: absolute;
   top: 0;
   left: 50%;
   width: 46px;
   height: 46px;
   margin-left: -23px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 100%;
   box-sizing: border-box;
 }
@@ -128,8 +127,8 @@ section::after {
   width: 16px;
   height: 16px;
   margin: -12px 0 0 -8px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
@@ -137,9 +136,7 @@ section::after {
 
 
 
-#section03 a {
-  padding-top: 60px;
-}
+
 #section03 a span {
   position: absolute;
   top: 0;
@@ -147,7 +144,7 @@ section::after {
   width: 46px;
   height: 46px;
   margin-left: -23px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 100%;
   box-sizing: border-box;
 }
@@ -159,8 +156,8 @@ section::after {
   width: 16px;
   height: 16px;
   margin: -12px 0 0 -8px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
