@@ -26411,7 +26411,7 @@ var Home = function (_React$Component) {
 									{ className: 'row' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'col-12 home-description' },
+										{ className: 'col-12 home-description', align: 'center' },
 										_react2.default.createElement('br', null),
 										_react2.default.createElement('br', null),
 										_react2.default.createElement('br', null),
@@ -26506,7 +26506,6 @@ var Home = function (_React$Component) {
 					_react2.default.createElement(
 						'div',
 						{ className: 'p-0 d-flex align-items-center slide slide-three' },
-						_react2.default.createElement('img', { src: '/public/images/screenshots/contributer_view.png', width: '800', height: '550', className: 'img-fluid img-thumbnail float-right', alt: '' }),
 						_react2.default.createElement(
 							'div',
 							{ className: 'slide-description' },
@@ -26521,6 +26520,7 @@ var Home = function (_React$Component) {
 								' \xF2t\xEDt\xF3 empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust '
 							)
 						),
+						_react2.default.createElement('img', { src: '/public/images/screenshots/contributer_view.png', width: '800', height: '550', className: 'img-fluid img-thumbnail float-right', alt: '' }),
 						_react2.default.createElement(
 							'div',
 							{ className: 'bd-highlight' },

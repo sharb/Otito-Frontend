@@ -39,7 +39,7 @@ export default class Home extends React.Component {
 						<div className="row">
 							<div className="col-12">
 								<div className="row">
-									<div className="col-12 home-description">
+									<div className="col-12 home-description" align="center">
 										<br/><br/><br/><br/>
 											<h1 className="line1 home-header"><strong>Society's most democratic tool for</strong></h1>
 											<h1 className="line2 home-header"><strong>documenting and sharing objectively verifable</strong></h1>
@@ -78,12 +78,12 @@ export default class Home extends React.Component {
 					</div>
 				</section>
 				<section id="section03" className="p-0 m-0 section-body">
-					<div className="p-0 d-flex align-items-center slide slide-three">
-						<img src="/public/images/screenshots/contributer_view.png" width="800" height="550" className="img-fluid img-thumbnail float-right" alt=""/>				       
+					<div className="p-0 d-flex align-items-center slide slide-three">				       
 					    <div className="slide-description">
 					    	<h2>Take back control of how key issues are framed</h2>
 				        	<p> òtító empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust </p>
 						</div>
+						<img src="/public/images/screenshots/contributer_view.png" width="800" height="550" className="img-fluid img-thumbnail float-right" alt=""/>
 						<div className="bd-highlight">
 
 							<a href="#section01"><span>
