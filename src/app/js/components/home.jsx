@@ -33,8 +33,8 @@ export default class Home extends React.Component {
 
 			<div id="snap-container" ref={this.snapcontainer}>
 				<div className="page first-page slide slide-one d-flex">
-					<div className="mt-5">
-						<div className="row mt-5">
+					<div className="">
+						<div className="row ">
 							<div className="col-12">
 								<div className="row">
 									<div className="offset-1 col-10 home-description">

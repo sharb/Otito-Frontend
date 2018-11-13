@@ -56,7 +56,7 @@ export default class Header extends React.Component {
 						    </div>
 						</div>
 						<div className="p-2">
-							<img src="/public/images/pro-pic.jpg" width="50" height="50" className="d-inline-block" alt="profile pic" id="profile-pic"/>
+							{/*<img src="/public/images/pro-pic.jpg" width="50" height="50" className="d-inline-block" alt="profile pic" id="profile-pic"/>*/}
 						</div>
 				    </div>
 				   

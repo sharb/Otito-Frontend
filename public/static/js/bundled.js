@@ -23560,11 +23560,7 @@ var Header = function (_React$Component) {
 								)
 							)
 						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'p-2' },
-							_react2.default.createElement('img', { src: '/public/images/pro-pic.jpg', width: '50', height: '50', className: 'd-inline-block', alt: 'profile pic', id: 'profile-pic' })
-						)
+						_react2.default.createElement('div', { className: 'p-2' })
 					)
 				)
 			);
@@ -26395,10 +26391,10 @@ var Home = function (_React$Component) {
 					{ className: 'page first-page slide slide-one d-flex' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'mt-5' },
+						{ className: '' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'row mt-5' },
+							{ className: 'row ' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'col-12' },
