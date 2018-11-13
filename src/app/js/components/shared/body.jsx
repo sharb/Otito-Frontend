@@ -8,9 +8,8 @@ import {
 // pages
 import About from '../about.jsx';
 import Home from '../home.jsx';
-import Topic from '../topic.jsx';
 import Join from '../join.jsx';
-import Contribute from '../contribute.jsx';
+import Mission from '../mission.jsx';
 
 
 export default class Body extends React.Component {
@@ -28,10 +27,9 @@ export default class Body extends React.Component {
 		
             <div className="container-fluid p-0" id="bootstrap-override">
 				<Route exact path='/' component={Home}/>
-				<Route exact path='/topics' component={Topic}/>
-				<Route exact path='/contribute' component={Contribute}/>
 				<Route exact path='/join' component={Join}/>
 				<Route exact path='/about' component={About}/>
+				<Route exact path='/mission' component={Mission}/>
 			</div>
 		);
 	}

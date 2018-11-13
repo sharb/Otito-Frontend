@@ -58,116 +58,14 @@
   /* Adjust as needed */
 }
 
-.typewriter {
-  /* The typewriter cursor effect */
-}
-.typewriter h1 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid transparent;
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-}
-.typewriter .line1 {
-  -webkit-animation: type 3s steps(40, end);
-  animation: type 3s steps(40, end), blinking-cursor 4s;
-}
-.typewriter .line2 {
-  animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  -webkit-animation: type 5s steps(40, end);
-  animation: type2 3s steps(60, end), blinking-cursor 4s;
-}
-@keyframes type {
-  from {
-    width: 0;
-  }
-}
-@-webkit-keyframes type {
-  from {
-    width: 0;
-  }
-}
-.typewriter span {
-  animation: blink 1s infinite;
-}
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  from {
-    opacity: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  to {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes type2 {
-  0% {
-    width: 0;
-  }
-  from {
-    opacity: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  to {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes type3 {
-  0% {
-    width: 0;
-  }
-  from {
-    opacity: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  to {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes type3 {
-  0% {
-    width: 0;
-  }
-  from {
-    opacity: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  to {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes blinking-cursor {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .slide {
@@ -207,6 +105,11 @@
   z-index: 9;
 }
 
+.home-description {
+  z-index: 100;
+  position: relative !important;
+}
+
 #home-people-img {
   position: absolute;
   left: -150px;
@@ -242,6 +145,10 @@
   margin-top: 10px !important;
 }
 
+.snap-container {
+  overflow: auto;
+}
+
 .test {
   -webkit-column-gap: 0px;
   /* Chrome, Safari, Opera */
@@ -250,11 +157,25 @@
   column-gap: 0px;
 }
 
-.upscribe-form {
+.upscribe-form-home {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   margin-top: -80px !important;
+  z-index: 1;
+}
+
+.join-me-text {
+  position: relative;
+  z-index: 100;
+}
+
+.upscribe-form-join {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: -40px !important;
+  z-index: 10;
 }
 
 html, body {
@@ -284,6 +205,10 @@ html, body {
 
 .main-wrapper {
   height: 100% !important;
+}
+
+.full-width-container {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=bundled.css.map */

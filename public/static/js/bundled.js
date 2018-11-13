@@ -23499,16 +23499,7 @@ var Header = function (_React$Component) {
 										_react2.default.createElement(
 											_reactRouterDom.Link,
 											{ to: '/', className: 'nav-link m-2 menu-item' },
-											'TOPICS'
-										)
-									),
-									_react2.default.createElement(
-										'li',
-										{ className: 'nav-item' },
-										_react2.default.createElement(
-											_reactRouterDom.Link,
-											{ to: '/contribute', className: 'nav-link m-2 menu-item' },
-											'CONTRIBUTE'
+											'HOME'
 										)
 									),
 									_react2.default.createElement(
@@ -23527,6 +23518,15 @@ var Header = function (_React$Component) {
 											_reactRouterDom.Link,
 											{ to: '/about', className: 'nav-link m-2 menu-item' },
 											'ABOUT'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										{ className: 'nav-item' },
+										_react2.default.createElement(
+											_reactRouterDom.Link,
+											{ to: '/about', className: 'nav-link m-2 menu-item' },
+											'MISSION'
 										)
 									)
 								)
@@ -26180,17 +26180,13 @@ var _home = __webpack_require__(65);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _topic = __webpack_require__(66);
-
-var _topic2 = _interopRequireDefault(_topic);
-
-var _join = __webpack_require__(67);
+var _join = __webpack_require__(71);
 
 var _join2 = _interopRequireDefault(_join);
 
-var _contribute = __webpack_require__(68);
+var _mission = __webpack_require__(73);
 
-var _contribute2 = _interopRequireDefault(_contribute);
+var _mission2 = _interopRequireDefault(_mission);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26220,10 +26216,9 @@ var Body = function (_React$Component) {
 				'div',
 				{ className: 'container-fluid p-0', id: 'bootstrap-override' },
 				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
-				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/topics', component: _topic2.default }),
-				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/contribute', component: _contribute2.default }),
 				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/join', component: _join2.default }),
-				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default })
+				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
+				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/mission', component: _mission2.default })
 			);
 		}
 	}]);
@@ -26274,9 +26269,36 @@ var About = function (_React$Component) {
 		value: function render() {
 
 			return _react2.default.createElement(
-				'p',
-				null,
-				'About Page'
+				'div',
+				{ className: 'd-flex full-width-container' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'row' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'offset-3 col-6' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'center-content-v' },
+							_react2.default.createElement(
+								'h3',
+								null,
+								'The world\u2019s Platform for creating shared narratives of truth'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'The world is creating way more information than it knows how to handle. This is breaking society apart\u2014especially at political, cultural and policy levels.',
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
+								'We believe we have devised a solution to this\u2014a platform that will be the new way trustworthy information is generated and disseminated online. No longer will people have to worry about issues of fake news on platforms like Facebook and other social media\u2014or of bias and political affiliations/agendas with traditional news media.',
+								_react2.default.createElement('br', null),
+								_react2.default.createElement('br', null),
+								'As information becomes highly commodified and devalued, we believe people will place more value on less information of unquestionable reliability\u2014than on more information of questionable truthfulness.'
+							)
+						)
+					)
+				)
 			);
 		}
 	}]);
@@ -26305,6 +26327,14 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(3);
 
+var _scrollSnap = __webpack_require__(66);
+
+var _scrollSnap2 = _interopRequireDefault(_scrollSnap);
+
+var _reactWaypoint = __webpack_require__(67);
+
+var _reactWaypoint2 = _interopRequireDefault(_reactWaypoint);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26323,15 +26353,18 @@ var Home = function (_React$Component) {
 	}
 
 	_createClass(Home, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {}
+	}, {
 		key: 'render',
 		value: function render() {
 
 			return _react2.default.createElement(
 				'div',
-				{ className: 'snappy' },
+				{ id: 'snap-container', ref: this.snapcontainer },
 				_react2.default.createElement(
 					'div',
-					{ className: 'slide slide-one d-flex snappy-content' },
+					{ className: 'page first-page slide slide-one d-flex' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'mt-5' },
@@ -26346,7 +26379,7 @@ var Home = function (_React$Component) {
 									{ className: 'row' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'offset-1 col-10' },
+										{ className: 'offset-1 col-10 home-description' },
 										_react2.default.createElement(
 											'h1',
 											{ className: 'line1 home-header' },
@@ -26369,7 +26402,7 @@ var Home = function (_React$Component) {
 										_react2.default.createElement(
 											'div',
 											{ className: 'input-group upscribe-col ' },
-											_react2.default.createElement('iframe', { src: 'https://upscri.be/fe37e0?as_embed', height: '400', frameBorder: '0', className: 'upscribe-form' })
+											_react2.default.createElement('iframe', { src: 'https://upscri.be/fe37e0?as_embed', height: '400', frameBorder: '0', className: 'upscribe-form-home' })
 										)
 									)
 								)
@@ -26377,60 +26410,45 @@ var Home = function (_React$Component) {
 						)
 					)
 				),
+				_react2.default.createElement(_reactWaypoint2.default, {
+					onEnter: this._handleWaypointEnter,
+					onLeave: this._handleWaypointLeave
+				}),
 				_react2.default.createElement(
 					'div',
-					{ className: 'slide slide-two snappy-content' },
-					_react2.default.createElement('img', { src: '/public/images/screenshots/create_a_thesis.png', width: '800', className: 'img-fluid img-thumbnail float-left', alt: '' }),
+					{ className: 'page second-page slide slide-two' },
+					_react2.default.createElement('img', { src: '/public/images/screenshots/simple_view.png', width: '800', className: 'img-fluid img-thumbnail float-left', alt: '' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'slide-description' },
 						_react2.default.createElement(
 							'h2',
 							null,
-							'Create a thesis'
+							'Explore nuances in the truth consensus on any topic'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'Nullam viverra, justo vel facilisis elementum, dolor mi varius metus, vitae iaculis libero neque non lorem. Aliquam erat volutpat.'
+							'\xF2t\xEDt\xF3 lets you solicit or contribute objectively verifiable truths to discussions about difficult topics in society.'
 						)
 					)
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'slide slide-three snappy-content' },
-					_react2.default.createElement('img', { src: '/public/images/screenshots/submit_claim.png', width: '800', className: 'img-fluid img-thumbnail float-right', alt: '' }),
+					{ className: 'page third-page slide slide-three' },
+					_react2.default.createElement('img', { src: '/public/images/screenshots/contributer_view.png', width: '800', className: 'img-fluid img-thumbnail float-right', alt: '' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'slide-description' },
 						_react2.default.createElement(
 							'h2',
 							null,
-							'Submit a claim'
+							'Take back control of how key issues are framed'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quod. Pellentesque posuere tincidunt ultrices.  '
-						)
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'slide slide-four snappy-content' },
-					_react2.default.createElement('img', { src: '/public/images/screenshots/thesis.png', width: '800', className: 'img-fluid img-thumbnail float-left', alt: '' }),
-					_react2.default.createElement(
-						'div',
-						{ className: 'slide-description' },
-						_react2.default.createElement(
-							'h2',
-							null,
-							'Submit a claim'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'Curabitur libero nisl, egestas in vestibulum s Pellentesque posuere tincidunt ultrices.  '
+							' \xF2t\xEDt\xF3 empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust '
 						)
 					)
 				)
@@ -26443,26 +26461,287 @@ var Home = function (_React$Component) {
 
 exports.default = Home;
 
+
+{} /*
+   this.state = {
+        	scrollStatus:''
+       };
+       this._timeout = null;
+       this.handleScroll = this.handleScroll.bind(this);
+   
+    if(this._timeout){ //if there is already a timeout in process cancel it
+    clearTimeout(this._timeout);
+   }
+   this._timeout = setTimeout(() => {
+     this._timeout = null;
+     this.setState({
+       scrollStatus:'scroll stopped'
+     });
+   },1000);
+   if(this.state.scrollStatus !== 'scrolling') {
+     this.setState({
+       scrollStatus:'scrolling'
+     });
+   }
+   (*/
+
+// ES6
+function debounced(delay, fn) {
+	var timerId = void 0;
+	return function () {
+		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+			args[_key] = arguments[_key];
+		}
+
+		if (timerId) {
+			clearTimeout(timerId);
+		}
+		timerId = setTimeout(function () {
+			fn.apply(undefined, args);
+			timerId = null;
+		}, delay);
+	};
+}
+
+var myHandler = function myHandler(event) {
+	return function () {
+		console.log("stopped");
+	};
+}; // do something with the event
+var dHandler = debounced(200, myHandler);
+window.addEventListener("scroll", dHandler);
+
 /***/ }),
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
+!function(t,e){ true?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports["scroll-snap"]=e():t["scroll-snap"]=e()}(this,function(){return function(t){function e(o){if(n[o])return n[o].exports;var i=n[o]={i:o,l:!1,exports:{}};return t[o].call(i.exports,i,i.exports,e),i.l=!0,i.exports}var n={};return e.m=t,e.c=n,e.i=function(t){return t},e.d=function(t,n,o){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:o})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="",e(e.s=0)}([function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};e.default=function(t,e){function n(t,e){function n(){_[e]=null}var o=t,i=void 0;return i=null!==_[e]?o-_[e]:0,_[e]=o,q&&clearTimeout(q),q=setTimeout(n,50),i}function u(t){t.snapLengthUnit=v(S)}function c(t){W=t===document?document.body:t,t.style.overflow="auto",t.style.webkitOverflowScrolling="auto",t.addEventListener("scroll",s,!1),u(W)}function f(t){t.style.webkitOverflowScrolling=null,t.removeEventListener("scroll",s,!1)}function s(){H=n(W.scrollLeft,"x"),R=n(W.scrollTop,"y"),j||0===H&&0===R||a(W)}function a(t){A=t,F=h(A),k&&(window.cancelAnimationFrame(k)||clearTimeout(k)),O?clearTimeout(O):U={y:F.scrollTop,x:F.scrollLeft},O=setTimeout(d,L)}function d(){if(U.y!==F.scrollTop||U.x!==F.scrollLeft){var t={y:R>0?1:-1,x:H>0?1:-1},e=void 0;e=m(F,A,t),A.removeEventListener("scroll",s,!1),j=!0,E(F,e,function(){j=!1,A.addEventListener("scroll",s,!1),M()}),isNaN(e.x||!isNaN(e.y))||(U=e)}}function m(t,e,n){var o={y:p(n.y,x(e,e.snapLengthUnit.y)),x:p(n.x,w(e,e.snapLengthUnit.x))},i=t.scrollTop,r=t.scrollLeft,l={y:i/o.y||1,x:r/o.x||1},u={y:0,x:0};u.y=p(n.y,l.y),u.x=p(n.x,l.x);var c={y:u.y*o.y,x:u.x*o.x};return c.y=y(0,t.scrollHeight,c.y),c.x=y(0,t.scrollWidth,c.x),c}function p(t,e){return t===-1?Math.floor(e):Math.ceil(e)}function y(t,e,n){return Math.max(Math.min(n,e),t)}function v(t){var e=/(\d+)(px|%|vw) (\d+)(px|%|vh)/g,n={y:{value:0,unit:"px"},x:{value:0,unit:"px"}},o=void 0;return o=e.exec(t),null!==o&&(n.x={value:o[1],unit:o[2]},n.y={value:o[3],unit:o[4]}),n}function x(t,e){return"vh"===e.unit?Math.max(document.documentElement.clientHeight,window.innerHeight||1)/100*e.value:"%"===e.unit?t.offsetHeight/100*e.value:t.offsetHeight/e.value}function w(t,e){return"vw"===e.unit?Math.max(document.documentElement.clientWidth,window.innerWidth||1)/100*e.value:"%"===e.unit?t.offsetWidth/100*e.value:t.offsetWidth/e.value}function h(t){return t===document||t===window?document.documentElement.scrollTop>0||document.documentElement.scrollLeft>0?document.documentElement:document.querySelector("body"):t}function b(t,e,n,o){return n*(t/=o)*t*t+e}function T(t,e,n,o){return n>o?e:b(n,t,e-t,o)}function g(t,e){return 0===t.x&&0===R||0===t.y&&0===H}function E(t,e,n){function o(c){u||(u=c);var f=c-u;if(isNaN(e.y)||(t.scrollTop=T(i.y,e.y,f,l)),isNaN(e.x)||(t.scrollLeft=T(i.x,e.x,f,l)),f<l)r(o);else if("function"==typeof n)return n(e)}var i={y:t.scrollTop,x:t.scrollLeft},r=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||function(t){window.setTimeout(t,15)},l=g(i,e)?0:N,u=null;k=r(o)}if(e.scrollTimeout&&(isNaN(e.scrollTimeout)||"boolean"==typeof e.scrollTimeout))throw new Error("Optional config property 'scrollTimeout' is not valid, expected NUMBER but found "+o(e.scrollTimeout).toUpperCase());var L=e.scrollTimeout||i;if(e.scrollTime&&(isNaN(e.scrollTime)||"boolean"==typeof e.scrollTime))throw new Error("Optional config property 'scrollTime' is not valid, expected NUMBER but found "+o(e.scrollTime).toUpperCase());var N=e.scrollTime||r;if(!e.scrollSnapDestination)throw new Error("Required config property scrollSnapDestination is not defined");var S=e.scrollSnapDestination,M=void 0,O=null,U=null,j=!1,q=0,H=void 0,R=void 0,W=void 0,A=void 0,F=void 0,_={x:null,y:null},k=null;return this.bind=function(e){M="function"==typeof e?e:l,c(t)},this.unbind=function(){f(t)},this};var i=300,r=2,l=function(){}}])});
+
+/***/ }),
+/* 67 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function(process, global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_consolidated_events__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 
 
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
+
+
+/**
+ * Attempts to parse the offset provided as a prop as a percentage. For
+ * instance, if the component has been provided with the string "20%" as
+ * a value of one of the offset props. If the value matches, then it returns
+ * a numeric version of the prop. For instance, "20%" would become `0.2`.
+ * If `str` isn't a percentage, then `undefined` will be returned.
+ *
+ * @param {string} str The value of an offset prop to be converted to a
+ *   number.
+ * @return {number|undefined} The numeric version of `str`. Undefined if `str`
+ *   was not a percentage.
+ */
+function parseOffsetAsPercentage(str) {
+  if (str.slice(-1) === '%') {
+    return parseFloat(str.slice(0, -1)) / 100;
+  }
+}
+
+/**
+ * Attempts to parse the offset provided as a prop as a pixel value. If
+ * parsing fails, then `undefined` is returned. Three examples of values that
+ * will be successfully parsed are:
+ * `20`
+ * "20px"
+ * "20"
+ *
+ * @param {string|number} str A string of the form "{number}" or "{number}px",
+ *   or just a number.
+ * @return {number|undefined} The numeric version of `str`. Undefined if `str`
+ *   was neither a number nor string ending in "px".
+ */
+function parseOffsetAsPixels(str) {
+  if (!isNaN(parseFloat(str)) && isFinite(str)) {
+    return parseFloat(str);
+  } else if (str.slice(-2) === 'px') {
+    return parseFloat(str.slice(0, -2));
+  }
+}
+
+/**
+ * @param {string|number} offset
+ * @param {number} contextHeight
+ * @return {number} A number representing `offset` converted into pixels.
+ */
+function computeOffsetPixels(offset, contextHeight) {
+  var pixelOffset = parseOffsetAsPixels(offset);
+
+  if (typeof pixelOffset === 'number') {
+    return pixelOffset;
+  }
+
+  var percentOffset = parseOffsetAsPercentage(offset);
+  if (typeof percentOffset === 'number') {
+    return percentOffset * contextHeight;
+  }
+}
+
+var constants = {
+  above: 'above',
+  inside: 'inside',
+  below: 'below',
+  invisible: 'invisible'
+};
+
+function debugLog() {
+  if (process.env.NODE_ENV !== 'production') {
+    console.log(arguments); // eslint-disable-line no-console
+  }
+}
+
+var errorMessage = '<Waypoint> expected to receive a single React element child.\n\n' + 'See https://goo.gl/LrBNgw for more info.';
+
+/**
+ * Raise an error if more that one child was provided to "children"
+ *
+ * @param {?React.element} children
+ * @return {undefined}
+ */
+function ensureChildrenIsValid(children) {
+  if (children) {
+    try {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.Children.only(children);
+    } catch (e) {
+      throw new Error(errorMessage);
+    }
+  }
+}
+
+/**
+ * When an element's type is a string, it represents a DOM node with that tag name
+ * https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html#dom-elements
+ *
+ * @param {React.element} Component
+ * @return {bool} Whether the component is a DOM Element
+ */
+function isDOMElement(Component) {
+  return typeof Component.type === 'string';
+}
+
+var errorMessage$1 = '<Waypoint> needs a DOM element to compute boundaries. The child you passed is neither a ' + 'DOM element (e.g. <div>) nor does it use the innerRef prop.\n\n' + 'See https://goo.gl/LrBNgw for more info.';
+
+/**
+ * Raise an error if "children" is not a DOM Element and there is no ref provided to Waypoint
+ *
+ * @param {?React.element} children
+ * @param {?HTMLElement} ref
+ * @return {undefined}
+ */
+function ensureRefIsProvidedByChild(children, ref) {
+  if (children && !isDOMElement(children) && !ref) {
+    throw new Error(errorMessage$1);
+  }
+}
+
+/**
+ * @param {object} bounds An object with bounds data for the waypoint and
+ *   scrollable parent
+ * @return {string} The current position of the waypoint in relation to the
+ *   visible portion of the scrollable parent. One of `constants.above`,
+ *   `constants.below`, or `constants.inside`.
+ */
+function getCurrentPosition(bounds) {
+  if (bounds.viewportBottom - bounds.viewportTop === 0) {
+    return constants.invisible;
+  }
+
+  // top is within the viewport
+  if (bounds.viewportTop <= bounds.waypointTop && bounds.waypointTop <= bounds.viewportBottom) {
+    return constants.inside;
+  }
+
+  // bottom is within the viewport
+  if (bounds.viewportTop <= bounds.waypointBottom && bounds.waypointBottom <= bounds.viewportBottom) {
+    return constants.inside;
+  }
+
+  // top is above the viewport and bottom is below the viewport
+  if (bounds.waypointTop <= bounds.viewportTop && bounds.viewportBottom <= bounds.waypointBottom) {
+    return constants.inside;
+  }
+
+  if (bounds.viewportBottom < bounds.waypointTop) {
+    return constants.below;
+  }
+
+  if (bounds.waypointTop < bounds.viewportTop) {
+    return constants.above;
+  }
+
+  return constants.invisible;
+}
+
+var timeout = void 0;
+var timeoutQueue = [];
+
+function onNextTick(cb) {
+  timeoutQueue.push(cb);
+
+  if (!timeout) {
+    timeout = setTimeout(function () {
+      timeout = null;
+
+      // Drain the timeoutQueue
+      var item = void 0;
+      // eslint-disable-next-line no-cond-assign
+      while (item = timeoutQueue.shift()) {
+        item();
+      }
+    }, 0);
+  }
+
+  var isSubscribed = true;
+
+  return function () {
+    function unsubscribe() {
+      if (!isSubscribed) {
+        return;
+      }
+
+      isSubscribed = false;
+
+      var index = timeoutQueue.indexOf(cb);
+      if (index === -1) {
+        return;
+      }
+
+      timeoutQueue.splice(index, 1);
+
+      if (!timeoutQueue.length && timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+    }
+
+    return unsubscribe;
+  }();
+}
+
+function resolveScrollableAncestorProp(scrollableAncestor) {
+  // When Waypoint is rendered on the server, `window` is not available.
+  // To make Waypoint easier to work with, we allow this to be specified in
+  // string form and safely convert to `window` here.
+  if (scrollableAncestor === 'window') {
+    return global.window;
+  }
+
+  return scrollableAncestor;
+}
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -26470,149 +26749,665 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Topic = function (_React$Component) {
-	_inherits(Topic, _React$Component);
+var defaultProps = {
+  topOffset: '0px',
+  bottomOffset: '0px',
+  horizontal: false,
+  onEnter: function () {
+    function onEnter() {}
 
-	function Topic(props) {
-		_classCallCheck(this, Topic);
+    return onEnter;
+  }(),
+  onLeave: function () {
+    function onLeave() {}
 
-		return _possibleConstructorReturn(this, (Topic.__proto__ || Object.getPrototypeOf(Topic)).call(this, props));
-	}
+    return onLeave;
+  }(),
+  onPositionChange: function () {
+    function onPositionChange() {}
 
-	_createClass(Topic, [{
-		key: 'render',
-		value: function render() {
+    return onPositionChange;
+  }(),
 
-			return _react2.default.createElement(
-				'div',
-				{ className: 'card-deck' },
-				_react2.default.createElement(
-					'div',
-					{ className: 'container' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'row' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'p-0 col-md-4 col-lg-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'topic-card card h-100 center-content-h' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'card-img-caption' },
-									_react2.default.createElement(
-										'p',
-										{ className: 'card-text' },
-										'Test'
-									),
-									_react2.default.createElement('img', { className: 'card-img-top', src: '/public/images/forest.jpg', alt: 'Card image cap' })
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'card-body' },
-									_react2.default.createElement(
-										'h5',
-										{ className: 'card-title' },
-										'Is global warming influenced by human activities?'
-									),
-									_react2.default.createElement(
-										'p',
-										{ className: 'card-text' },
-										_react2.default.createElement(
-											'small',
-											{ className: 'text-muted' },
-											'Today'
-										)
-									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'p-0 col-md-4 col-lg-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'topic-card  card h-100 center-content-h ' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'card-img-caption' },
-									_react2.default.createElement(
-										'p',
-										{ className: 'card-text' },
-										'Test'
-									),
-									_react2.default.createElement('img', { className: 'card-img-top', src: '/public/images/illegal-immigration.jpg', alt: 'Card image cap' })
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'card-body' },
-									_react2.default.createElement(
-										'h5',
-										{ className: 'card-title' },
-										'Is Illegal Immigration having a negative impact...'
-									),
-									_react2.default.createElement(
-										'p',
-										{ className: 'card-text' },
-										_react2.default.createElement(
-											'small',
-											{ className: 'text-muted' },
-											'Last updated 3 mins ago'
-										)
-									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'p-0 col-md-4 col-lg-4' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'topic-card   card h-100 center-content-h ' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'card-img-caption' },
-									_react2.default.createElement(
-										'p',
-										{ className: 'card-text' },
-										'Test'
-									),
-									_react2.default.createElement('img', { className: 'card-img-top', src: '/public/images/couple.jpg', alt: 'Card image cap' })
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'card-body' },
-									_react2.default.createElement(
-										'h5',
-										{ className: 'card-title' },
-										'Is there a relationship between IQ and race?'
-									),
-									_react2.default.createElement(
-										'p',
-										{ className: 'card-text' },
-										_react2.default.createElement(
-											'small',
-											{ className: 'text-muted' },
-											'Last updated yesterday'
-										)
-									)
-								)
-							)
-						)
-					)
-				)
-			);
-		}
-	}]);
+  fireOnRapidScroll: true
+};
 
-	return Topic;
-}(_react2.default.Component);
+// React.PureComponent was added in React 15.3.0
+var BaseClass = typeof __WEBPACK_IMPORTED_MODULE_0_react___default.a.PureComponent !== 'undefined' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.PureComponent : __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component;
 
-exports.default = Topic;
+// Calls a function when you scroll to the element.
+
+var Waypoint = function (_BaseClass) {
+  _inherits(Waypoint, _BaseClass);
+
+  function Waypoint(props) {
+    _classCallCheck(this, Waypoint);
+
+    var _this = _possibleConstructorReturn(this, (Waypoint.__proto__ || Object.getPrototypeOf(Waypoint)).call(this, props));
+
+    _this.refElement = function (e) {
+      return _this._ref = e;
+    };
+    return _this;
+  }
+
+  _createClass(Waypoint, [{
+    key: 'componentWillMount',
+    value: function () {
+      function componentWillMount() {
+        ensureChildrenIsValid(this.props.children);
+      }
+
+      return componentWillMount;
+    }()
+  }, {
+    key: 'componentDidMount',
+    value: function () {
+      function componentDidMount() {
+        var _this2 = this;
+
+        if (!Waypoint.getWindow()) {
+          return;
+        }
+
+        // this._ref may occasionally not be set at this time. To help ensure that
+        // this works smoothly and to avoid layout thrashing, we want to delay the
+        // initial execution until the next tick.
+        this.cancelOnNextTick = onNextTick(function () {
+          _this2.cancelOnNextTick = null;
+
+          // Berofe doing anything, we want to check that this._ref is avaliable in Waypoint
+          ensureRefIsProvidedByChild(_this2.props.children, _this2._ref);
+
+          _this2._handleScroll = _this2._handleScroll.bind(_this2);
+          _this2.scrollableAncestor = _this2._findScrollableAncestor();
+
+          if (process.env.NODE_ENV !== 'production' && _this2.props.debug) {
+            debugLog('scrollableAncestor', _this2.scrollableAncestor);
+          }
+
+          _this2.scrollEventListenerUnsubscribe = Object(__WEBPACK_IMPORTED_MODULE_1_consolidated_events__["a" /* addEventListener */])(_this2.scrollableAncestor, 'scroll', _this2._handleScroll, { passive: true });
+
+          _this2.resizeEventListenerUnsubscribe = Object(__WEBPACK_IMPORTED_MODULE_1_consolidated_events__["a" /* addEventListener */])(window, 'resize', _this2._handleScroll, { passive: true });
+
+          _this2._handleScroll(null);
+        });
+      }
+
+      return componentDidMount;
+    }()
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function () {
+      function componentWillReceiveProps(newProps) {
+        ensureChildrenIsValid(newProps.children);
+      }
+
+      return componentWillReceiveProps;
+    }()
+  }, {
+    key: 'componentDidUpdate',
+    value: function () {
+      function componentDidUpdate() {
+        var _this3 = this;
+
+        if (!Waypoint.getWindow()) {
+          return;
+        }
+
+        if (!this.scrollableAncestor) {
+          // The Waypoint has not yet initialized.
+          return;
+        }
+
+        // The element may have moved, so we need to recompute its position on the
+        // page. This happens via handleScroll in a way that forces layout to be
+        // computed.
+        //
+        // We want this to be deferred to avoid forcing layout during render, which
+        // causes layout thrashing. And, if we already have this work enqueued, we
+        // can just wait for that to happen instead of enqueueing again.
+        if (this.cancelOnNextTick) {
+          return;
+        }
+
+        this.cancelOnNextTick = onNextTick(function () {
+          _this3.cancelOnNextTick = null;
+          _this3._handleScroll(null);
+        });
+      }
+
+      return componentDidUpdate;
+    }()
+  }, {
+    key: 'componentWillUnmount',
+    value: function () {
+      function componentWillUnmount() {
+        if (!Waypoint.getWindow()) {
+          return;
+        }
+
+        if (this.scrollEventListenerUnsubscribe) {
+          this.scrollEventListenerUnsubscribe();
+        }
+        if (this.resizeEventListenerUnsubscribe) {
+          this.resizeEventListenerUnsubscribe();
+        }
+
+        if (this.cancelOnNextTick) {
+          this.cancelOnNextTick();
+        }
+      }
+
+      return componentWillUnmount;
+    }()
+
+    /**
+     * Traverses up the DOM to find an ancestor container which has an overflow
+     * style that allows for scrolling.
+     *
+     * @return {Object} the closest ancestor element with an overflow style that
+     *   allows for scrolling. If none is found, the `window` object is returned
+     *   as a fallback.
+     */
+
+  }, {
+    key: '_findScrollableAncestor',
+    value: function () {
+      function _findScrollableAncestor() {
+        var _props = this.props,
+            horizontal = _props.horizontal,
+            scrollableAncestor = _props.scrollableAncestor;
+
+
+        if (scrollableAncestor) {
+          return resolveScrollableAncestorProp(scrollableAncestor);
+        }
+
+        var node = this._ref;
+
+        while (node.parentNode) {
+          node = node.parentNode;
+
+          if (node === document.body) {
+            // We've reached all the way to the root node.
+            return window;
+          }
+
+          var style = window.getComputedStyle(node);
+          var overflowDirec = horizontal ? style.getPropertyValue('overflow-x') : style.getPropertyValue('overflow-y');
+          var overflow = overflowDirec || style.getPropertyValue('overflow');
+
+          if (overflow === 'auto' || overflow === 'scroll') {
+            return node;
+          }
+        }
+
+        // A scrollable ancestor element was not found, which means that we need to
+        // do stuff on window.
+        return window;
+      }
+
+      return _findScrollableAncestor;
+    }()
+
+    /**
+     * @param {Object} event the native scroll event coming from the scrollable
+     *   ancestor, or resize event coming from the window. Will be undefined if
+     *   called by a React lifecyle method
+     */
+
+  }, {
+    key: '_handleScroll',
+    value: function () {
+      function _handleScroll(event) {
+        if (!this._ref) {
+          // There's a chance we end up here after the component has been unmounted.
+          return;
+        }
+
+        var bounds = this._getBounds();
+        var currentPosition = getCurrentPosition(bounds);
+        var previousPosition = this._previousPosition;
+
+        if (process.env.NODE_ENV !== 'production' && this.props.debug) {
+          debugLog('currentPosition', currentPosition);
+          debugLog('previousPosition', previousPosition);
+        }
+
+        // Save previous position as early as possible to prevent cycles
+        this._previousPosition = currentPosition;
+
+        if (previousPosition === currentPosition) {
+          // No change since last trigger
+          return;
+        }
+
+        var callbackArg = {
+          currentPosition: currentPosition,
+          previousPosition: previousPosition,
+          event: event,
+          waypointTop: bounds.waypointTop,
+          waypointBottom: bounds.waypointBottom,
+          viewportTop: bounds.viewportTop,
+          viewportBottom: bounds.viewportBottom
+        };
+        this.props.onPositionChange.call(this, callbackArg);
+
+        if (currentPosition === constants.inside) {
+          this.props.onEnter.call(this, callbackArg);
+        } else if (previousPosition === constants.inside) {
+          this.props.onLeave.call(this, callbackArg);
+        }
+
+        var isRapidScrollDown = previousPosition === constants.below && currentPosition === constants.above;
+        var isRapidScrollUp = previousPosition === constants.above && currentPosition === constants.below;
+
+        if (this.props.fireOnRapidScroll && (isRapidScrollDown || isRapidScrollUp)) {
+          // If the scroll event isn't fired often enough to occur while the
+          // waypoint was visible, we trigger both callbacks anyway.
+          this.props.onEnter.call(this, {
+            currentPosition: constants.inside,
+            previousPosition: previousPosition,
+            event: event,
+            waypointTop: bounds.waypointTop,
+            waypointBottom: bounds.waypointBottom,
+            viewportTop: bounds.viewportTop,
+            viewportBottom: bounds.viewportBottom
+          });
+          this.props.onLeave.call(this, {
+            currentPosition: currentPosition,
+            previousPosition: constants.inside,
+            event: event,
+            waypointTop: bounds.waypointTop,
+            waypointBottom: bounds.waypointBottom,
+            viewportTop: bounds.viewportTop,
+            viewportBottom: bounds.viewportBottom
+          });
+        }
+      }
+
+      return _handleScroll;
+    }()
+  }, {
+    key: '_getBounds',
+    value: function () {
+      function _getBounds() {
+        var horizontal = this.props.horizontal;
+
+        var _ref$getBoundingClien = this._ref.getBoundingClientRect(),
+            left = _ref$getBoundingClien.left,
+            top = _ref$getBoundingClien.top,
+            right = _ref$getBoundingClien.right,
+            bottom = _ref$getBoundingClien.bottom;
+
+        var waypointTop = horizontal ? left : top;
+        var waypointBottom = horizontal ? right : bottom;
+
+        var contextHeight = void 0;
+        var contextScrollTop = void 0;
+        if (this.scrollableAncestor === window) {
+          contextHeight = horizontal ? window.innerWidth : window.innerHeight;
+          contextScrollTop = 0;
+        } else {
+          contextHeight = horizontal ? this.scrollableAncestor.offsetWidth : this.scrollableAncestor.offsetHeight;
+          contextScrollTop = horizontal ? this.scrollableAncestor.getBoundingClientRect().left : this.scrollableAncestor.getBoundingClientRect().top;
+        }
+
+        if (process.env.NODE_ENV !== 'production' && this.props.debug) {
+          debugLog('waypoint top', waypointTop);
+          debugLog('waypoint bottom', waypointBottom);
+          debugLog('scrollableAncestor height', contextHeight);
+          debugLog('scrollableAncestor scrollTop', contextScrollTop);
+        }
+
+        var _props2 = this.props,
+            bottomOffset = _props2.bottomOffset,
+            topOffset = _props2.topOffset;
+
+        var topOffsetPx = computeOffsetPixels(topOffset, contextHeight);
+        var bottomOffsetPx = computeOffsetPixels(bottomOffset, contextHeight);
+        var contextBottom = contextScrollTop + contextHeight;
+
+        return {
+          waypointTop: waypointTop,
+          waypointBottom: waypointBottom,
+          viewportTop: contextScrollTop + topOffsetPx,
+          viewportBottom: contextBottom - bottomOffsetPx
+        };
+      }
+
+      return _getBounds;
+    }()
+
+    /**
+     * @return {Object}
+     */
+
+  }, {
+    key: 'render',
+    value: function () {
+      function render() {
+        var _this4 = this;
+
+        var children = this.props.children;
+
+
+        if (!children) {
+          // We need an element that we can locate in the DOM to determine where it is
+          // rendered relative to the top of its context.
+          return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { ref: this.refElement, style: { fontSize: 0 } });
+        }
+
+        if (isDOMElement(children)) {
+          var ref = function () {
+            function ref(node) {
+              _this4.refElement(node);
+              if (children.ref) {
+                children.ref(node);
+              }
+            }
+
+            return ref;
+          }();
+
+          return __WEBPACK_IMPORTED_MODULE_0_react___default.a.cloneElement(children, { ref: ref });
+        }
+
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.cloneElement(children, { innerRef: this.refElement });
+      }
+
+      return render;
+    }()
+  }]);
+
+  return Waypoint;
+}(BaseClass);
+
+
+Waypoint.propTypes = {
+  children: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.node,
+  debug: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.bool,
+  onEnter: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.func,
+  onLeave: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.func,
+  onPositionChange: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.func,
+  fireOnRapidScroll: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.bool,
+  scrollableAncestor: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.any,
+  horizontal: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.bool,
+
+  // `topOffset` can either be a number, in which case its a distance from the
+  // top of the container in pixels, or a string value. Valid string values are
+  // of the form "20px", which is parsed as pixels, or "20%", which is parsed
+  // as a percentage of the height of the containing element.
+  // For instance, if you pass "-20%", and the containing element is 100px tall,
+  // then the waypoint will be triggered when it has been scrolled 20px beyond
+  // the top of the containing element.
+  topOffset: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.number]),
+
+  // `bottomOffset` is like `topOffset`, but for the bottom of the container.
+  bottomOffset: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.number])
+};
+
+Waypoint.above = constants.above;
+Waypoint.below = constants.below;
+Waypoint.inside = constants.inside;
+Waypoint.invisible = constants.invisible;
+Waypoint.getWindow = function () {
+  if (typeof window !== 'undefined') {
+    return window;
+  }
+};
+Waypoint.defaultProps = defaultProps;
+Waypoint.displayName = 'Waypoint';
+
+/* harmony default export */ __webpack_exports__["default"] = (Waypoint);
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1), __webpack_require__(68)))
 
 /***/ }),
-/* 67 */
+/* 68 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 69 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addEventListener; });
+var CAN_USE_DOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+// Adapted from Modernizr
+// https://github.com/Modernizr/Modernizr/blob/acb3f0d9/feature-detects/dom/passiveeventlisteners.js#L26-L37
+function testPassiveEventListeners() {
+  if (!CAN_USE_DOM) {
+    return false;
+  }
+
+  if (!window.addEventListener || !window.removeEventListener || !Object.defineProperty) {
+    return false;
+  }
+
+  var supportsPassiveOption = false;
+  try {
+    var opts = Object.defineProperty({}, 'passive', {
+      // eslint-disable-next-line getter-return
+      get: function () {
+        function get() {
+          supportsPassiveOption = true;
+        }
+
+        return get;
+      }()
+    });
+    var noop = function noop() {};
+    window.addEventListener('testPassiveEventSupport', noop, opts);
+    window.removeEventListener('testPassiveEventSupport', noop, opts);
+  } catch (e) {
+    // do nothing
+  }
+
+  return supportsPassiveOption;
+}
+
+var memoized = void 0;
+
+function canUsePassiveEventListeners() {
+  if (memoized === undefined) {
+    memoized = testPassiveEventListeners();
+  }
+  return memoized;
+}
+
+function normalizeEventOptions(eventOptions) {
+  if (!eventOptions) {
+    return undefined;
+  }
+
+  if (!canUsePassiveEventListeners()) {
+    // If the browser does not support the passive option, then it is expecting
+    // a boolean for the options argument to specify whether it should use
+    // capture or not. In more modern browsers, this is passed via the `capture`
+    // option, so let's just hoist that value up.
+    return !!eventOptions.capture;
+  }
+
+  return eventOptions;
+}
+
+/* eslint-disable no-bitwise */
+
+/**
+ * Generate a unique key for any set of event options
+ */
+function eventOptionsKey(normalizedEventOptions) {
+  if (!normalizedEventOptions) {
+    return 0;
+  }
+
+  // If the browser does not support passive event listeners, the normalized
+  // event options will be a boolean.
+  if (normalizedEventOptions === true) {
+    return 100;
+  }
+
+  // At this point, the browser supports passive event listeners, so we expect
+  // the event options to be an object with possible properties of capture,
+  // passive, and once.
+  //
+  // We want to consistently return the same value, regardless of the order of
+  // these properties, so let's use binary maths to assign each property to a
+  // bit, and then add those together (with an offset to account for the
+  // booleans at the beginning of this function).
+  var capture = normalizedEventOptions.capture << 0;
+  var passive = normalizedEventOptions.passive << 1;
+  var once = normalizedEventOptions.once << 2;
+  return capture + passive + once;
+}
+
+function ensureCanMutateNextEventHandlers(eventHandlers) {
+  if (eventHandlers.handlers === eventHandlers.nextHandlers) {
+    // eslint-disable-next-line no-param-reassign
+    eventHandlers.nextHandlers = eventHandlers.handlers.slice();
+  }
+}
+
+function TargetEventHandlers(target) {
+  this.target = target;
+  this.events = {};
+}
+
+TargetEventHandlers.prototype.getEventHandlers = function () {
+  function getEventHandlers(eventName, options) {
+    var key = String(eventName) + ' ' + String(eventOptionsKey(options));
+
+    if (!this.events[key]) {
+      this.events[key] = {
+        handlers: [],
+        handleEvent: undefined
+      };
+      this.events[key].nextHandlers = this.events[key].handlers;
+    }
+
+    return this.events[key];
+  }
+
+  return getEventHandlers;
+}();
+
+TargetEventHandlers.prototype.handleEvent = function () {
+  function handleEvent(eventName, options, event) {
+    var eventHandlers = this.getEventHandlers(eventName, options);
+    eventHandlers.handlers = eventHandlers.nextHandlers;
+    eventHandlers.handlers.forEach(function (handler) {
+      if (handler) {
+        // We need to check for presence here because a handler function may
+        // cause later handlers to get removed. This can happen if you for
+        // instance have a waypoint that unmounts another waypoint as part of an
+        // onEnter/onLeave handler.
+        handler(event);
+      }
+    });
+  }
+
+  return handleEvent;
+}();
+
+TargetEventHandlers.prototype.add = function () {
+  function add(eventName, listener, options) {
+    var _this = this;
+
+    // options has already been normalized at this point.
+    var eventHandlers = this.getEventHandlers(eventName, options);
+
+    ensureCanMutateNextEventHandlers(eventHandlers);
+
+    if (eventHandlers.nextHandlers.length === 0) {
+      eventHandlers.handleEvent = this.handleEvent.bind(this, eventName, options);
+
+      this.target.addEventListener(eventName, eventHandlers.handleEvent, options);
+    }
+
+    eventHandlers.nextHandlers.push(listener);
+
+    var isSubscribed = true;
+    var unsubscribe = function () {
+      function unsubscribe() {
+        if (!isSubscribed) {
+          return;
+        }
+
+        isSubscribed = false;
+
+        ensureCanMutateNextEventHandlers(eventHandlers);
+        var index = eventHandlers.nextHandlers.indexOf(listener);
+        eventHandlers.nextHandlers.splice(index, 1);
+
+        if (eventHandlers.nextHandlers.length === 0) {
+          // All event handlers have been removed, so we want to remove the event
+          // listener from the target node.
+
+          if (_this.target) {
+            // There can be a race condition where the target may no longer exist
+            // when this function is called, e.g. when a React component is
+            // unmounting. Guarding against this prevents the following error:
+            //
+            //   Cannot read property 'removeEventListener' of undefined
+            _this.target.removeEventListener(eventName, eventHandlers.handleEvent, options);
+          }
+
+          eventHandlers.handleEvent = undefined;
+        }
+      }
+
+      return unsubscribe;
+    }();
+    return unsubscribe;
+  }
+
+  return add;
+}();
+
+var EVENT_HANDLERS_KEY = '__consolidated_events_handlers__';
+
+// eslint-disable-next-line import/prefer-default-export
+function addEventListener(target, eventName, listener, options) {
+  if (!target[EVENT_HANDLERS_KEY]) {
+    // eslint-disable-next-line no-param-reassign
+    target[EVENT_HANDLERS_KEY] = new TargetEventHandlers(target);
+  }
+  var normalizedEventOptions = normalizeEventOptions(options);
+  return target[EVENT_HANDLERS_KEY].add(eventName, listener, normalizedEventOptions);
+}
+
+
+
+
+/***/ }),
+/* 70 */,
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26652,9 +27447,48 @@ var Join = function (_React$Component) {
 		value: function render() {
 
 			return _react2.default.createElement(
-				'p',
-				null,
-				'Landing Page'
+				'div',
+				{ className: 'full-width-container d-flex' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'mt-5' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'row mt-5' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'col-12' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'row' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'offset-3 col-6 join-me-text' },
+									_react2.default.createElement(
+										'h3',
+										{ align: 'center' },
+										'Join us on our journey to generating & disseminating ',
+										_react2.default.createElement(
+											'i',
+											null,
+											'only'
+										),
+										' trustworthy information. Get exclusive updates and upcoming features of the \xF2t\xEDt\xF3 platorm!'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'offset-3 col-6' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'input-group upscribe-col' },
+										_react2.default.createElement('iframe', { src: 'https://upscri.be/fe37e0?as_embed', height: '275', frameBorder: '0', className: 'upscribe-form-join' })
+									)
+								)
+							)
+						)
+					)
+				)
 			);
 		}
 	}]);
@@ -26665,7 +27499,8 @@ var Join = function (_React$Component) {
 exports.default = Join;
 
 /***/ }),
-/* 68 */
+/* 72 */,
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26691,31 +27526,42 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Contribute = function (_React$Component) {
-	_inherits(Contribute, _React$Component);
+var Mission = function (_React$Component) {
+	_inherits(Mission, _React$Component);
 
-	function Contribute(props) {
-		_classCallCheck(this, Contribute);
+	function Mission(props) {
+		_classCallCheck(this, Mission);
 
-		return _possibleConstructorReturn(this, (Contribute.__proto__ || Object.getPrototypeOf(Contribute)).call(this, props));
+		return _possibleConstructorReturn(this, (Mission.__proto__ || Object.getPrototypeOf(Mission)).call(this, props));
 	}
 
-	_createClass(Contribute, [{
+	_createClass(Mission, [{
 		key: 'render',
 		value: function render() {
 
 			return _react2.default.createElement(
-				'p',
-				null,
-				'Landing Page'
+				'div',
+				{ className: 'd-flex' },
+				_react2.default.createElement(
+					'h3',
+					null,
+					'Mission Statement'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
+					_react2.default.createElement('br', null),
+					'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours'
+				)
 			);
 		}
 	}]);
 
-	return Contribute;
+	return Mission;
 }(_react2.default.Component);
 
-exports.default = Contribute;
+exports.default = Mission;
 
 /***/ })
 /******/ ]);

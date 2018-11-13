@@ -7,6 +7,7 @@ $main-green: #7fe8b9;
 @import 'topic.scss';
 @import 'footer.scss';
 @import 'home.scss';
+@import 'join.scss';
 
 
 
@@ -64,6 +65,13 @@ html, body {
 	
 
 }
+
+
+.full-width-container {
+  height: 100vh;
+}
+
+
 
 
 

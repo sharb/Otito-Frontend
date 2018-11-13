@@ -1,6 +1,10 @@
 .snappy {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
 }
 
 .snappy-content {

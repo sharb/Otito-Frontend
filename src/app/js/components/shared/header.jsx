@@ -41,16 +41,16 @@ export default class Header extends React.Component {
 					         <div className="collapse navbar-collapse" id="myNavbar">
 						        <ul className="navbar-nav ml-auto flex-nowrap">
 						            <li className="nav-item">
-						                <Link to='/' className="nav-link m-2 menu-item">TOPICS</Link>
-						            </li>
-						            <li className="nav-item">
-						                <Link to="/contribute" className="nav-link m-2 menu-item">CONTRIBUTE</Link>
+						                <Link to='/' className="nav-link m-2 menu-item">HOME</Link>
 						            </li>
 						            <li className="nav-item">
 						                <Link to="/join" className="nav-link m-2 menu-item">JOIN</Link>
 						            </li>
 						            <li className="nav-item">
 						                <Link to="/about" className="nav-link m-2 menu-item">ABOUT</Link>
+						            </li>
+						            <li className="nav-item">
+						                <Link to="/about" className="nav-link m-2 menu-item">MISSION</Link>
 						            </li>
 						        </ul>
 						    </div>

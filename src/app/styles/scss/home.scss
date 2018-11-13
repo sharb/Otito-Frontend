@@ -6,7 +6,15 @@
 }
 
 
-
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 
 
@@ -57,6 +65,11 @@
 	z-index: 9;
 }
 
+.home-description{
+	z-index: 100;
+	position: relative !important;
+}
+
 
 #home-people-img {
 	position: absolute;
@@ -94,6 +107,11 @@
 }
 
 
+.snap-container{
+	overflow: auto;
+}
+
+
 .test{
 	-webkit-column-gap: 0px; /* Chrome, Safari, Opera */
     -moz-column-gap: 0px; /* Firefox */
@@ -101,9 +119,10 @@
 }    
 
 
-.upscribe-form{
-	width:100%;max-width:800px;margin:0 auto;
-	margin-top: -80px !important;	
+.upscribe-form-home{
+  width:100%;max-width:800px;margin:0 auto;
+  margin-top: -80px !important; 
+  z-index: 1;
 }
 
 
