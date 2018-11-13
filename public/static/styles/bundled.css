@@ -47,6 +47,10 @@
   height: 30px;
 }
 
+.main-footer {
+  z-index: 1000;
+}
+
 .footer {
   background-color: #3c3c3c;
   color: #ececec;
@@ -202,8 +206,8 @@ section a:hover {
 }
 
 .section-sub2 {
-  height: 100vh;
-  max-height: 100vh;
+  height: 95vh;
+  max-height: 95vh;
 }
 
 .section-body {

@@ -55,7 +55,7 @@ export default class Home extends React.Component {
 						</div>
 					</div>
 					<div className="d-flex align-items-center">
-						<a href="#section02"><span>
+						<a href="#section02" className="section-link"><span>
 				  		</span>See More</a>
 					</div>
 				</section>
@@ -71,13 +71,13 @@ export default class Home extends React.Component {
 				    	</div>
 						<div className="bd-highlight">
 
-							<a href="#section03"><span>
+							<a href="#section03" className="section-link"><span>
 				  				</span></a>
 				  		
 						</div>
 					</div>
 				</section>
-				<section id="section03" className="p-0 m-0 section-body">
+				<section id="section03" className="p-0 m-0 section-sub2">
 					<div className="p-0 d-flex align-items-center slide slide-three">				       
 					    <div className="slide-description">
 					    	<h2>Take back control of how key issues are framed</h2>
@@ -86,7 +86,7 @@ export default class Home extends React.Component {
 						<img src="/public/images/screenshots/contributer_view.png" width="800" height="550" className="img-fluid img-thumbnail float-right" alt=""/>
 						<div className="bd-highlight">
 
-							<a href="#section01"><span>
+							<a href="#top-section" className="section-link"><span>
 				  				</span></a>
 				  		
 						</div>
@@ -106,7 +106,7 @@ export default class Home extends React.Component {
 
 {/* https://codepen.io/nxworld/pen/OyRrGy */}
 $(function() {
-$('section div a').on('click', function(e) {
+$('.section-link').on('click', function(e) {
    e.preventDefault();
    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
  });

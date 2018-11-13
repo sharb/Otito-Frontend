@@ -2204,7 +2204,7 @@ var App = function (_React$Component) {
         null,
         _react2.default.createElement(
           'div',
-          { className: 'd-flex flex-column bd-highlight main-wrapper' },
+          { id: 'top-section', className: 'd-flex flex-column bd-highlight main-wrapper' },
           _react2.default.createElement(
             'div',
             { className: 'main-header' },
@@ -26467,7 +26467,7 @@ var Home = function (_React$Component) {
 						{ className: 'd-flex align-items-center' },
 						_react2.default.createElement(
 							'a',
-							{ href: '#section02' },
+							{ href: '#section02', className: 'section-link' },
 							_react2.default.createElement('span', null),
 							'See More'
 						)
@@ -26499,7 +26499,7 @@ var Home = function (_React$Component) {
 							{ className: 'bd-highlight' },
 							_react2.default.createElement(
 								'a',
-								{ href: '#section03' },
+								{ href: '#section03', className: 'section-link' },
 								_react2.default.createElement('span', null)
 							)
 						)
@@ -26507,7 +26507,7 @@ var Home = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					'section',
-					{ id: 'section03', className: 'p-0 m-0 section-body' },
+					{ id: 'section03', className: 'p-0 m-0 section-sub2' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'p-0 d-flex align-items-center slide slide-three' },
@@ -26531,7 +26531,7 @@ var Home = function (_React$Component) {
 							{ className: 'bd-highlight' },
 							_react2.default.createElement(
 								'a',
-								{ href: '#section01' },
+								{ href: '#top-section', className: 'section-link' },
 								_react2.default.createElement('span', null)
 							)
 						)
@@ -26549,7 +26549,7 @@ exports.default = Home;
 
 {/* https://codepen.io/nxworld/pen/OyRrGy */}
 $(function () {
-	$('section div a').on('click', function (e) {
+	$('.section-link').on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
 	});
