@@ -11,6 +11,8 @@
 html, body {
   height: 100%;
 }
+
+// header, and body
 section {
   position: relative;
   width: 100%;
@@ -35,11 +37,24 @@ section {
   }
 }
 
-
+// full page that includes header, body, and footer
 .section-sub {
   height: 85vh;
   max-height: 85vh;
  
+}
+
+// full page that includes body, and footer
+.section-sub2 {
+  height: 100vh;
+  max-height: 100vh;
+ 
+}
+
+// page with only body section
+.section-body{
+  height: 110vh;
+  max-height:110vh;
 }
 
 

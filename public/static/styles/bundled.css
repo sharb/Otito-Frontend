@@ -196,6 +196,16 @@ section a:hover {
   max-height: 85vh;
 }
 
+.section-sub2 {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.section-body {
+  height: 110vh;
+  max-height: 110vh;
+}
+
 section::after {
   position: absolute;
   bottom: 0;

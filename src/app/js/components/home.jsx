@@ -63,22 +63,24 @@ export default class Home extends React.Component {
 
 
 				
-	
-			    <div className="page second-page slide slide-two">
-				    <img src="/public/images/screenshots/simple_view.png" width="800"  className="img-fluid img-thumbnail float-left" alt=""/>				       
-				    <div className="slide-description">
-				    	<h2>Explore nuances in the truth consensus on any topic</h2>
-			        	<p>òtító lets you solicit or contribute objectively verifiable truths to discussions about difficult topics in society.</p>
-			    	</div>
-			    </div>
-			    <div className="page third-page slide slide-three">
-			    	<img src="/public/images/screenshots/contributer_view.png" width="800"  className="img-fluid img-thumbnail float-right" alt=""/>
-			        <div className="slide-description">
-			        	<h2>Take back control of how key issues are framed</h2>
-			        	<p> òtító empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust </p>
-			        </div>
-			    </div>
-
+				<section id="section02" className="section-body">
+				    <div className="page second-page slide slide-two">
+					    <img src="/public/images/screenshots/simple_view.png" width="800"  className="img-fluid img-thumbnail float-left" alt=""/>				       
+					    <div className="slide-description">
+					    	<h2>Explore nuances in the truth consensus on any topic</h2>
+				        	<p>òtító lets you solicit or contribute objectively verifiable truths to discussions about difficult topics in society.</p>
+				    	</div>
+				    </div>
+				</section>
+				<section id="section03" className="section-sub2">
+				    <div className="page third-page slide slide-three">
+				    	<img src="/public/images/screenshots/contributer_view.png" width="800"  className="img-fluid img-thumbnail float-right" alt=""/>
+				        <div className="slide-description">
+				        	<h2>Take back control of how key issues are framed</h2>
+				        	<p> òtító empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust </p>
+				        </div>
+				    </div>
+				</section>
 			</span>
 			
 		

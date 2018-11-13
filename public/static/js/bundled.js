@@ -26465,40 +26465,48 @@ var Home = function (_React$Component) {
 					)
 				),
 				_react2.default.createElement(
-					'div',
-					{ className: 'page second-page slide slide-two' },
-					_react2.default.createElement('img', { src: '/public/images/screenshots/simple_view.png', width: '800', className: 'img-fluid img-thumbnail float-left', alt: '' }),
+					'section',
+					{ id: 'section02', className: 'section-body' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'slide-description' },
+						{ className: 'page second-page slide slide-two' },
+						_react2.default.createElement('img', { src: '/public/images/screenshots/simple_view.png', width: '800', className: 'img-fluid img-thumbnail float-left', alt: '' }),
 						_react2.default.createElement(
-							'h2',
-							null,
-							'Explore nuances in the truth consensus on any topic'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'\xF2t\xEDt\xF3 lets you solicit or contribute objectively verifiable truths to discussions about difficult topics in society.'
+							'div',
+							{ className: 'slide-description' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Explore nuances in the truth consensus on any topic'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'\xF2t\xEDt\xF3 lets you solicit or contribute objectively verifiable truths to discussions about difficult topics in society.'
+							)
 						)
 					)
 				),
 				_react2.default.createElement(
-					'div',
-					{ className: 'page third-page slide slide-three' },
-					_react2.default.createElement('img', { src: '/public/images/screenshots/contributer_view.png', width: '800', className: 'img-fluid img-thumbnail float-right', alt: '' }),
+					'section',
+					{ id: 'section03', className: 'section-sub2' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'slide-description' },
+						{ className: 'page third-page slide slide-three' },
+						_react2.default.createElement('img', { src: '/public/images/screenshots/contributer_view.png', width: '800', className: 'img-fluid img-thumbnail float-right', alt: '' }),
 						_react2.default.createElement(
-							'h2',
-							null,
-							'Take back control of how key issues are framed'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							' \xF2t\xEDt\xF3 empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust '
+							'div',
+							{ className: 'slide-description' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Take back control of how key issues are framed'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								' \xF2t\xEDt\xF3 empowers all users to regulate the quality of sources, veracity of claims and the behaviour of each other, so we can maintain a platform we all trust '
+							)
 						)
 					)
 				)
