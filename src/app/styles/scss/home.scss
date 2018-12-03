@@ -1,11 +1,11 @@
 
 .home-header{
-	z-index: 10;
-	position:relative;
-//	letter-spacing: .10em; /* Adjust as needed */
+   width: 100%;
+   display: block;
+
+
+
 }
-
-
 
 
 
@@ -93,9 +93,9 @@
 	border-color: #fcfcfc !important;	
 }
 
-.searchbar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.searchbar::placeholder { 
     color: black !important;
-    opacity: .3 !important; /* Firefox */
+    opacity: .3 !important; 
     font-size: 14px !important;
 }
 
@@ -111,19 +111,10 @@
 }
 
 
-.test{
-	-webkit-column-gap: 0px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 0px; /* Firefox */
-    column-gap: 0px;
-}    
 
-
-.upscribe-form-home{
-  width:100%;max-width:800px;margin:0 auto;
-  margin-top: -80px !important; 
+.upscribe-form-home {
+  margin:0 auto;
   z-index: 1;
 }
-
-
 
 

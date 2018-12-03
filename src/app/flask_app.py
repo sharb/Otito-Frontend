@@ -26,6 +26,6 @@ def index(path):
 if __name__ == "__main__":
     app.run(
     		host = '127.0.0.1',
-    		port = 3004
+    		port = 3005
     	)
 

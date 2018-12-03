@@ -70,8 +70,8 @@
 }
 
 .home-header {
-  z-index: 10;
-  position: relative;
+  width: 100%;
+  display: block;
 }
 
 .slide {
@@ -144,10 +144,8 @@
 }
 
 .searchbar::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black !important;
   opacity: 0.3 !important;
-  /* Firefox */
   font-size: 14px !important;
 }
 
@@ -159,19 +157,8 @@
   overflow: auto;
 }
 
-.test {
-  -webkit-column-gap: 0px;
-  /* Chrome, Safari, Opera */
-  -moz-column-gap: 0px;
-  /* Firefox */
-  column-gap: 0px;
-}
-
 .upscribe-form-home {
-  width: 100%;
-  max-width: 800px;
   margin: 0 auto;
-  margin-top: -80px !important;
   z-index: 1;
 }
 
@@ -190,9 +177,9 @@ section {
   height: 90vh;
   max-height: 90vh;
 }
-section a {
+section a#see-more-link {
   position: absolute;
-  bottom: 70px;
+  bottom: 25px;
   left: 50%;
   z-index: 2;
   display: inline-block;
@@ -283,7 +270,6 @@ section a:hover {
   width: 46px;
   height: 46px;
   margin-left: -23px;
-  border: 1px solid white;
   border-radius: 100%;
   box-sizing: border-box;
 }
@@ -706,6 +692,14 @@ section a:hover {
     opacity: 0;
   }
 }
+#upscribe-form-link {
+  width: 100% !important;
+  position: absolute !important;
+  bottom: 80px !important;
+  font-size: 2.4em !important;
+  color: #285fb7 !important;
+}
+
 .join-me-text {
   position: relative;
   z-index: 100;
@@ -737,7 +731,7 @@ section a:hover {
 
 html, body {
   height: 100%;
-  font-size: 100%;
+  font-size: 12px;
 }
 
 .border {

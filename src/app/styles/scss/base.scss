@@ -34,7 +34,9 @@ $main-green: #7fe8b9;
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {  
+
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  }
@@ -50,7 +52,7 @@ $main-green: #7fe8b9;
 
 html, body {
 	height: 100%;
-	font-size: 100%;
+	font-size: 12px;
 
 }
 
