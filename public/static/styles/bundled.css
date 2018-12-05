@@ -3,6 +3,7 @@
   margin: 0px !important;
   padding: 0px !important;
   top: 40px !important;
+  z-index: 200px;
 }
 #main-navbar .menu-item {
   padding: 0px;
@@ -60,6 +61,8 @@
 }
 
 .footer {
+  width: 100%;
+  bottom: 0;
   background-color: #3c3c3c;
   color: #ececec;
 }
@@ -69,18 +72,18 @@
   font-size: 25px;
 }
 
-.home-header {
-  width: 100%;
-  display: block;
-}
-
 .slide {
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   padding: 50px 50px 0px 50px;
 }
 .slide .slide-description {
   padding: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .slide .slide-description {
+    padding: 0px;
+  }
 }
 .slide .slide-description p {
   color: #e5e5e5;
@@ -88,7 +91,6 @@
   font-size: 20px;
 }
 .slide img {
-  margin: 20px;
   padding: 0px;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(89, 87, 89, 0.3);
   -moz-box-shadow: 0px 0px 5px 3px rgba(89, 87, 89, 0.3);
@@ -110,14 +112,38 @@
   color: white;
 }
 
-.home-text {
-  font-size: 2em;
-  z-index: 9;
+.home-description {
+  z-index: 1 !important;
+  position: relative !important;
+  padding: 100px 20px 0px 20px;
+  font-weight: bold;
+  font-size: 38px;
+}
+@media only screen and (max-width: 979px) {
+  .home-description {
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-description {
+    padding-top: 70px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home-description {
+    padding-top: 50px;
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .home-description {
+    font-size: 24px;
+  }
 }
 
-.home-description {
-  z-index: 100;
-  position: relative !important;
+.form-page {
+  background-color: rgba(201, 76, 76, 0) !important;
 }
 
 #home-people-img {
@@ -144,8 +170,10 @@
 }
 
 .searchbar::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black !important;
   opacity: 0.3 !important;
+  /* Firefox */
   font-size: 14px !important;
 }
 
@@ -157,9 +185,19 @@
   overflow: auto;
 }
 
+.test {
+  -webkit-column-gap: 0px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 0px;
+  /* Firefox */
+  column-gap: 0px;
+}
+
 .upscribe-form-home {
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
-  z-index: 1;
+  margin-top: -80px !important;
 }
 
 * {
@@ -177,9 +215,9 @@ section {
   height: 90vh;
   max-height: 90vh;
 }
-section a#see-more-link {
+section a {
   position: absolute;
-  bottom: 25px;
+  bottom: 70px;
   left: 50%;
   z-index: 2;
   display: inline-block;
@@ -244,13 +282,14 @@ section a:hover {
 
 #section01 div a {
   color: black;
-  margin-left: -50px;
+  margin-left: -50px !important;
   text-decoration: none;
+  bottom: 10px;
 }
 
 #section01 div a span {
   position: absolute;
-  top: 20px;
+  bottom: 0px;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -262,6 +301,27 @@ section a:hover {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
+@media only screen and (max-width: 576px) {
+  #section01 div a span {
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-height: 568px) {
+  #section01 div a span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #section01 div a p {
+    display: none;
+  }
+}
+@media only screen and (max-height: 568px) {
+  #section01 div a p {
+    display: none;
+  }
+}
 
 #section02 div a span {
   position: absolute;
@@ -270,6 +330,7 @@ section a:hover {
   width: 46px;
   height: 46px;
   margin-left: -23px;
+  border: 1px solid white;
   border-radius: 100%;
   box-sizing: border-box;
 }
@@ -308,9 +369,9 @@ section a:hover {
   content: "";
   width: 16px;
   height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
+  margin: -4px 0 0 -8px;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
@@ -692,17 +753,9 @@ section a:hover {
     opacity: 0;
   }
 }
-#upscribe-form-link {
-  width: 100% !important;
-  position: absolute !important;
-  bottom: 80px !important;
-  font-size: 2.4em !important;
-  color: #285fb7 !important;
-}
-
 .join-me-text {
-  position: relative;
-  z-index: 100;
+  padding-top: 100px;
+  z-index: 1;
 }
 
 .upscribe-form-join {
@@ -710,7 +763,6 @@ section a:hover {
   max-width: 800px;
   margin: 0 auto;
   margin-top: -40px !important;
-  z-index: 10;
 }
 
 .main-header {
@@ -731,7 +783,7 @@ section a:hover {
 
 html, body {
   height: 100%;
-  font-size: 12px;
+  font-size: 100%;
 }
 
 .border {
@@ -760,6 +812,21 @@ html, body {
 
 .full-width-container {
   height: calc(100vh - 180px);
+}
+
+.full-width-container {
+  overflow: auto;
+  padding: 0 200px 0 200px;
+}
+@media only screen and (max-width: 979px) {
+  .full-width-container {
+    padding: 0 50px 0 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .full-width-container {
+    padding: 0 20px 0 20px;
+  }
 }
 
 /*# sourceMappingURL=bundled.css.map */
