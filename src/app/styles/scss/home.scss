@@ -1,8 +1,9 @@
 .slide{
 
-    height: 100vh;
-    overflow: hidden;
-    padding: 50px 50px 0px 50px;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 50px 50px 0px 50px;
 
     .slide-description{
 		padding: 40px; 
@@ -24,6 +25,29 @@
 
     }
 }
+// scroll bar 
+// .slide::-webkit-scrollbar {
+//     -webkit-appearance: none;
+// }
+
+// .slide::-webkit-scrollbar:vertical {
+//     width: 11px;
+// }
+
+// .slide::-webkit-scrollbar:horizontal {
+//     height: 11px;
+// }
+
+// .slide::-webkit-scrollbar-thumb {
+//     border-radius: 8px;
+//     border: 2px solid white; /* should match background, can't be transparent */
+//     background-color: rgba(0, 0, 0, .5);
+// }
+
+// .slide::-webkit-scrollbar-track { 
+//     background-color: #fff; 
+//     border-radius: 8px; 
+// } 
 
 .slide-one{
 	
@@ -63,7 +87,10 @@
 	}
 	@media only screen and (max-width : 320px) {
 		font-size: 24px;
-    }
+	}
+	@media only screen and (max-height: 568px) {
+		font-size: 26px;
+	}
 }
 
 .form-page {
@@ -118,9 +145,26 @@
 }    
 
 
-.upscribe-form-home{
-  width:100%;max-width:800px;margin:0 auto;
-  margin-top: -80px !important; 
+.upscribe-form-home {
+  width:100%;
+  max-width:800px;
+  max-height: 300px;
+  margin:0 auto;
+  padding: 0;
+}
+
+#section01 .form-page-form .contact-fields .form-control {
+    height: 10px !important;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    resize: none;
+    border: 1px solid #d2beb6!important;
+    border-radius: 4px!important;
+    background: 0 0!important;
+    background-color: #fff!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
 }
 
 

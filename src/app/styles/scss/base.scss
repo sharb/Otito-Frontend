@@ -12,16 +12,17 @@ $main-green: #7fe8b9;
 
 
 .main-header{
-  height: 10vh;
-   max-height: 10vh;
+  height: 12vh;
+   max-height: 12vh;
 //  border: 2px solid blue;
-  z-index: 100;
+  z-index: 999;
 }
 
 .main-body{
   height: 70%;
   max-height: 70%;
  //  border: 2px solid blue;
+  background-color: white;
 }
 
 .main-footer{
@@ -87,7 +88,7 @@ html, body {
 
 
 .full-width-container {
-  height: calc(100vh - 180px);
+  height: calc(100vh - 80px);
 }
 
 .full-width-container{

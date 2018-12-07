@@ -9,7 +9,7 @@ import Waypoint from 'react-waypoint';
 
 
 import Header from "./shared/header.jsx";
-
+import {Helmet} from "react-helmet";
 
 
 
@@ -33,7 +33,14 @@ export default class Home extends React.Component {
 		return (
 
 		
-			<span>
+			<div>
+				<Helmet>
+					<title>òtító | a platform for documenting and sharing truth</title>
+					<meta
+						name="description"
+						content="Society's most democratic tool for documenting and sharing objectively verifiable political and socio-cultural truth."
+					/>
+				</Helmet>
 				<section id="section01">
 				  	<div className="p-0 slide slide-one ">
 						<div className="row home-description" align="center">
@@ -42,11 +49,11 @@ export default class Home extends React.Component {
 								political and socio-cultural truth</p>
 						</div>
 						<div align="center">
-							<div className="input-group upscribe-col ">
-								<iframe src="https://upscri.be/fe37e0?as_embed" height="400" frameBorder="0" className="upscribe-form-home"></iframe>
+							<div className="upscribe-col ">
+								<iframe src="https://upscri.be/fe37e0?as_embed" height="270" frameBorder="0" className="upscribe-form-home"></iframe>
 							</div>
 						</div>
-						<div className="bd-highlight">
+						<div className="">
 							<a href="#section02" className="section-link">
 								<span></span><br/>
 								<p>See More</p>
@@ -98,7 +105,7 @@ export default class Home extends React.Component {
 				</section>
 
 				
-			</span>
+			</div>
 			
 		
 		);
