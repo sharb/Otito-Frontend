@@ -10,6 +10,7 @@
   padding: 0px;
   margin-left: 15px !important;
   margin-right: 15px !important;
+  border-bottom: 2px solid transparent;
 }
 #main-navbar .menu-item:hover {
   font-weight: 900;
@@ -61,13 +62,14 @@
   z-index: 1000;
 }
 
-.footer {
+#footer {
+  position: relative !important;
   width: 100%;
   bottom: 0;
   background-color: #3c3c3c;
   color: #ececec;
 }
-.footer .footer-text {
+#footer .footer-text {
   color: #7add7b;
   font-weight: 800;
   font-size: 25px;
@@ -756,7 +758,7 @@ section a:hover {
   }
 }
 .join-me-text {
-  padding-top: 100px;
+  padding-bottom: 50px;
   z-index: 1;
 }
 
@@ -767,6 +769,9 @@ section a:hover {
   margin-top: -40px !important;
 }
 
+#about ol {
+  padding-left: 50px;
+}
 .main-header {
   height: 12vh;
   max-height: 12vh;
@@ -780,8 +785,10 @@ section a:hover {
 }
 
 .main-footer {
+  position: relative !important;
   height: 5vh;
   max-height: 5vh;
+  bottom: 0;
 }
 
 html, body {
@@ -814,21 +821,21 @@ html, body {
 }
 
 .full-width-container {
-  height: calc(100vh - 80px);
+  min-height: 100%;
 }
 
 .full-width-container {
   overflow: auto;
-  padding: 0 200px 0 200px;
+  padding: 100px 200px 100px 200px;
 }
 @media only screen and (max-width: 979px) {
   .full-width-container {
-    padding: 0 50px 0 50px;
+    padding: 70px 50px 50px 50px;
   }
 }
 @media only screen and (max-width: 576px) {
   .full-width-container {
-    padding: 0 20px 0 20px;
+    padding: 70px 20px 50px 20px;
   }
 }
 

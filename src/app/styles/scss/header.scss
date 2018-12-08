@@ -6,16 +6,18 @@
 	top: 40px !important;
 	z-index: 200;
 	background-color: white;
-	
+
 	.menu-item{
 		padding: 0px;
 		margin-left: 15px !important;
 		margin-right: 15px !important;
+		// width: 50px;
+		border-bottom: 2px solid transparent;
 	}
 
 	.menu-item:hover{
 		font-weight: 900;
-  		border-bottom: 2px solid $main-green;
+		border-bottom: 2px solid $main-green;
 	}
 
 

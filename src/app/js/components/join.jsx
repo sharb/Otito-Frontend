@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Footer from './shared/footer.jsx';
 
 export default class Join extends React.Component {
 
@@ -14,7 +15,7 @@ export default class Join extends React.Component {
 	
 		return (
 			<section className="section-sub">
-				<div className="full-width-container d-flex">
+				<div className="full-width-container">
 					<div className="row">
 						<div className="col-12 join-me-text">
 							<h3 align="center">Join us on our journey to generating & disseminating <i>only</i> trustworthy information. Get exclusive updates and upcoming features of the òtító platorm!</h3>
@@ -26,6 +27,7 @@ export default class Join extends React.Component {
 						</div>
 					</div>
 				</div>
+				<Footer/>
 			</section>
 
 		);

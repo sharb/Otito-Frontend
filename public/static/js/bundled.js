@@ -2292,6 +2292,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(4);
 
+var _footer = __webpack_require__(68);
+
+var _footer2 = _interopRequireDefault(_footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2315,40 +2319,94 @@ var About = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'section',
-				{ className: 'section-sub' },
+				{ className: '', id: 'about' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'd-flex full-width-container' },
+					{ className: 'full-width-container' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'row about-div' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'col-12' },
-							_react2.default.createElement('br', null),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement('br', null),
 							_react2.default.createElement(
 								'h3',
 								null,
-								'The world\u2019s Platform for creating shared narratives of truth'
+								'Fostering socio-cultural and political progress, using the power of truth'
 							),
 							_react2.default.createElement(
 								'p',
 								null,
-								'The world is creating way more information than it knows how to handle. This is breaking society apart\u2014especially at political, cultural and policy levels.',
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								'We believe we have devised a solution to this\u2014a platform that will be the new way trustworthy information is generated and disseminated online. No longer will people have to worry about issues of fake news on platforms like Facebook and other social media\u2014or of bias and political affiliations/agendas with traditional news media.',
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								'As information becomes highly commodified and devalued, we believe people will place more value on less information of unquestionable reliability\u2014than on more information of questionable truthfulness.'
+								'The truth is not \u201Cone superseding fact\u201D, as often presumed\u2014it is, simultaneously, a collection of many interrelated facts. It is multifaceted and not all facets of a given truth point in the same direction. The problem is people have become exceptionally adept at acknowledging only the facets of truth which support their preconceptions.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Our platform combats this ingredient of polarisation, deception and misinformation by gathering in one place, all facets of objectively verifiable truth.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'We\u2019re relying on a few guiding principles as we tackle this formidable problem.'
+							),
+							_react2.default.createElement(
+								'h5',
+								null,
+								'Truth axiom'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'There is one foundational tenet of truth that can have utility in the public sphere, with which it is impossible to disagree without disagreeing with the value and existence of objective truth itself. Truth must be \u201Cobjectively verifiable\u201D by anyone, for it to have universal utility. There are other, personal kinds of truth, but these cannot be used as the gel of social cohesion, since they cannot be known by all the people they seek to bind. Truth only has value if it is known to be true\u2013\u2014and if truth is to be valued by all, then it must be knowable by all.'
+							),
+							_react2.default.createElement(
+								'h5',
+								null,
+								'Democratised tool'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'We will rely on a community of users to contribute and moderate facts (and their sources) on the platform. Trust in traditional (e.g. news publishers) and non-traditional (e.g. social media platforms) sources of information is at an all-time low and getting lower still. The transparent and consensus-based nature of the standards of our platform will help rejuvenate that trust in online information.'
+							),
+							_react2.default.createElement(
+								'h5',
+								null,
+								'Distilled truth'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'A graphical interface which presents information in a way that makes it easy for users to consume only the most objectively verified facts relating to a particular topic or group of topics. No opinions. No conjecture. No orthodoxy. No usernames. Just the facts.'
+							),
+							_react2.default.createElement(
+								'h4',
+								null,
+								'Our values'
+							),
+							_react2.default.createElement(
+								'ol',
+								null,
+								_react2.default.createElement(
+									'li',
+									null,
+									'Truth above all else. Our commitment is to the pursuit of the most pluralistic, accurate and representative picture of truth on any issue. We will never suppress information simply because it is uncomfortable. We are mere agents of truth, not arbiters of it.'
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									'Unity over partisanship. We don\u2019t care about political camps or ideological movements, and we will not use our tool to progress or hinder the agendas of any orthodoxy\u2014left or right wing, or anything in between. We wish to highlight how different parts of society can fit together\u2014even at the extremes\u2014not where new opportunities for division lie.'
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									'Knowledge transcends fear. We believe fear festers where the light of knowledge does not shine. But, in the face of an information deluge, fear is becoming the preferred tool for coping with complex and uncomfortable realities. Though the acquisition of a well-rounded body of knowledge represents the road less travelled, we believe it is the key to the enlightenment of our collective consciousness.'
+								)
 							)
 						)
 					)
-				)
+				),
+				_react2.default.createElement(_footer2.default, null)
 			);
 		}
 	}]);
@@ -2391,6 +2449,10 @@ var _header2 = _interopRequireDefault(_header);
 
 var _reactHelmet = __webpack_require__(73);
 
+var _footer = __webpack_require__(68);
+
+var _footer2 = _interopRequireDefault(_footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2418,19 +2480,6 @@ var Home = function (_React$Component) {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement(
-					_reactHelmet.Helmet,
-					null,
-					_react2.default.createElement(
-						'title',
-						null,
-						'\xF2t\xEDt\xF3 | a platform for documenting and sharing truth'
-					),
-					_react2.default.createElement('meta', {
-						name: 'description',
-						content: 'Society\'s most democratic tool for documenting and sharing objectively verifiable political and socio-cultural truth.'
-					})
-				),
 				_react2.default.createElement(
 					'section',
 					{ id: 'section01' },
@@ -2461,7 +2510,7 @@ var Home = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: '' },
+							{ className: 'bd-highlight' },
 							_react2.default.createElement(
 								'a',
 								{ href: '#section02', className: 'section-link' },
@@ -2555,7 +2604,8 @@ var Home = function (_React$Component) {
 							)
 						)
 					)
-				)
+				),
+				_react2.default.createElement(_footer2.default, null)
 			);
 		}
 	}]);
@@ -2712,6 +2762,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(4);
 
+var _footer = __webpack_require__(68);
+
+var _footer2 = _interopRequireDefault(_footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2738,7 +2792,7 @@ var Join = function (_React$Component) {
 				{ className: 'section-sub' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'full-width-container d-flex' },
+					{ className: 'full-width-container' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'row' },
@@ -2767,7 +2821,8 @@ var Join = function (_React$Component) {
 							)
 						)
 					)
-				)
+				),
+				_react2.default.createElement(_footer2.default, null)
 			);
 		}
 	}]);
@@ -2796,6 +2851,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(4);
 
+var _footer = __webpack_require__(68);
+
+var _footer2 = _interopRequireDefault(_footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2819,10 +2878,10 @@ var Mission = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'section',
-				{ className: 'section-sub' },
+				{ className: '', id: 'mission' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'd-flex full-width-container' },
+					{ className: 'full-width-container' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'row' },
@@ -2830,30 +2889,87 @@ var Mission = function (_React$Component) {
 							'div',
 							{ className: 'col-12' },
 							_react2.default.createElement(
-								'div',
-								{ className: '' },
+								'h3',
+								null,
+								'We\u2019ve set the truth free\u2026 and it terrifies us'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Many of us see parts of the Internet\u2014social media, specifically\u2014as horrible tools of deception and manipulation. People spewing all kinds of crazy and inaccurate views. Bad actors using propaganda to manipulate voters. Mob mentality and mass shaming as tools for social conditioning. Wouldn\u2019t life be better without them? Wouldn\u2019t it be easier to uphold the truth?'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'It might seem that way but we rarely pause to think of the alternative\u2014a world where a handful of newspapers, politicians and academics get to decide for you which information is accessible. After all, if we don\u2019t like the free-for-all nature of how information is generated on the Internet, then we must appoint moderators. But there is a reason why we kept innovating until we freed ourselves from that paradigm\u2014when only a few people controlled the flow of information through society, they kept too much of it to themselves. This power\u2014held by de facto arbiters of truth\u2014was insidious because not only did we have no way of knowing when it was being abused, we also had no real alternative to it.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'In the days when information flowed through arbiters of truth, the only things that existed in the world (as far as you knew) were the things they deemed you worthy of knowing\u2014and even then, knowledge would be coloured by their prejudices before it arrived in your consciousness. They made the world smaller, simpler and more familiar than it really was\u2014and in many ways, we liked that. Less information to process, fewer competing views to balance. But, now, the Internet is exposing you to all the unfathomable ways in which people don\u2019t think, feel and act like you\u2014and just how many of those people there are. This probably has you thinking, \u201CIf I\u2019m right and they\u2019re wrong, why should they get to spew their nonsense and infect other people?\u201D'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'But this overlooks the fact that, for the first time in human history, we have the clearest view of what the largest cross-section of people in society really think. From one extreme to the other. From the \u201Cbleeding heart liberal\u201D to the \u201Crace supremacist nationalist\u201D , and from the CEOs of large multinationals to their least-paid cleaners. If we \u201Csanitise\u201D that, we lose the diversity and rawness that makes it so unique in the history of our species. The Internet didn\u2019t teach us how to lie, or be bad researchers, or think and act irrationally. Those are all human traits. The Internet simply showed us just how much broader than our assumptions the spectra of beliefs, moral codes and cognitions in society really are. We are often encouraged to assume there is only one true interpretation of a phenomenon and that the one we have is the truth. Everybody else is not only wrong, they are evil. But it is often the institutions that encourage us down this path (rather than other civilians) that have an ulterior motive\u2014the maintenance of the status quo and their influence within it.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'The Internet isn\u2019t changing us\u2014it\u2019s showing us, for the first time, parts of our collective self that we never realised were there. For the first time, we have a mirror large enough to reflect all of society\u2014the good, the bad, the ugly... and the misunderstood.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'These people with whom we disagree are still part of the same species as us. They are still part of our society. They are our children\u2019s friend\u2019s parents. Our doctors. Our cleaners. The person sitting behind you on the bus. That lady who gave you a hand with your bag. That ivy League professor who\u2019s teaching the next generation of technology leaders. We cannot simply exclude them from discourse or go farther down a road of increasing discord and acrimony. To cope with this new level of collective self-perception to which the Internet has exposed us, we can surrender the power of information moderation back to a few elite institutions and pretend society is no more complex than our understanding of it. Or we can turn society into an ideological battleground where different factions try to destroy each other, for a chance to assert a dominant orthodoxy.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Or we can find a way to collaborate with people with whom we disagree, in order to achieve progress.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'You see, in all that noise and unstructured information on the Internet, lies the most representative picture of truth on any given issue. There are people (people like you) with unique experiences and perspectives, sharing objectively verifiable pieces of information, which can be assembled into a body of knowledge that\u2019s reliable and useful. These people (and the pieces of information they possess) are simply crowded out by all the noise and digital pollution. Rather than condemn the Internet\u2019s tendency to generate raw, unprocessed information, what if we could create a tool that processes out all the pollution, leaving only the gems of knowledge?'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'That is what we\u2019ve built in \xF2t\xEDt\xF3\u2014a tool that allows society to extract the pieces of objectively verifiable truth that is distributed in the minds, experiences and perspectives of different communities and people.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'We don\u2019t believe complex questions can be answered simplistically. Though it is emotionally satisfying and attractive to think that issues like Brexit or immigration have one simple, correct answer, it is also intellectually naive. The truth is, when it comes to big and complex phenomena, there are many things that are true at the same time\u2014and one truth contextualises another, while a set of truths can re-contextualise others. This is how reasonable people end up disagreeing on contentious matters. The best we can hope for is not that we figure out who the \u201Cright people\u201D and \u201Cwrong people\u201D are, then punish the latter. The best we can hope for is that most people understand the difference between \u201Cbad information\u201D and \u201Cgood information\u201D, and can easily access the latter. In this way, society becomes equipped to understand how reasonable people can come to disagree\u2014and, more importantly, move beyond their disagreements.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'\xF2t\xEDt\xF3 is a place where anyone can come to learn the objectively verifiable truth consensus on any socio-cultural or political issue\u2014safe in the knowledge that the tool is optimised to remove baseless assumptions, propaganda and attractive delusions. A place you can come to get the comfortable and the uncomfortable facts, the popularly verified narratives and their validated but unpopular counters, the most reliable epistemologies and the evidence-backed discoveries which undermine them.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'A place where truth is a utilitarian, multidimensional and cohesive representation of the soundest set of conclusions, based on the least contested bodies of knowledge.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'If you believe some good can come from the ideas I\u2019ve shared here, then join us. Not because I need you\u2026 but because the world does.'
+							),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Timi Olotu',
 								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null),
-								_react2.default.createElement(
-									'h3',
-									null,
-									'Mission Statement'
-								),
-								_react2.default.createElement(
-									'p',
-									null,
-									'To be faced with fact is not to be aggressed, to suppress fact is the ultimate aggression. What we do with fact is ultimately our decision as individuals, communities, and societies.',
-									_react2.default.createElement('br', null),
-									_react2.default.createElement('br', null),
-									'Helping people navigate and cut through the tribal noise and outrage dominating social, cultural, and political discours.'
-								)
+								'Founder, \xF2t\xEDt\xF3'
 							)
 						)
 					)
-				)
+				),
+				_react2.default.createElement(_footer2.default, null)
 			);
 		}
 	}]);
@@ -2948,11 +3064,6 @@ var App = function (_React$Component) {
             'div',
             { className: 'main-body' },
             _react2.default.createElement(_body2.default, null)
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'main-footer' },
-            _react2.default.createElement(_footer2.default, null)
           )
         )
       );
@@ -26728,7 +26839,7 @@ var Footer = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'footer',
-				{ className: 'footer p-8' },
+				{ id: 'footer' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'container-fluid' },

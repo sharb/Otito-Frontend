@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
 	render() {
 	
 		return (
-			<footer className="footer p-8">
+			<footer id="footer">
 				<div className="container-fluid">
 					<div className="d-flex justify-content-between">	
 						<div className="p-2"></div>
