@@ -1441,7 +1441,7 @@ var Header = function (_React$Component) {
 							{ className: 'p-2' },
 							_react2.default.createElement(
 								'a',
-								{ className: 'm-0 navbar-brand ', href: '#' },
+								{ className: 'm-0 navbar-brand ', href: '/' },
 								_react2.default.createElement('img', { src: '/public/images/otito-logo_burned.png', width: '50', height: '35', className: 'p-0 d-inline-block', alt: 'profile-pic' })
 							)
 						),
