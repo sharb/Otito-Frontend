@@ -48,7 +48,8 @@ let routes = (
     <Route exact path='/' component={Home}/>
     <Route exact path='/join' component={Join}/>
     <Route exact path='/about' component={About}/>
-    <Route exact path='/mission' component={Mission}/>
+    <Route exact path='/missions' component={Mission}/>
+    <Route component={Home} />
 </Route>
 );
 
