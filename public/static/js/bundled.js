@@ -3158,8 +3158,7 @@ var routes = _react2.default.createElement(
   _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
   _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/join', component: _join2.default }),
   _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
-  _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/missions', component: _mission2.default }),
-  _react2.default.createElement(_reactRouterDom.Route, { component: _home2.default })
+  _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/missions', component: _mission2.default })
 );
 
 (0, _reactDom.render)(_react2.default.createElement(
@@ -26944,8 +26943,7 @@ var Body = function (_React$Component) {
 				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
 				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/join', component: _join2.default }),
 				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _about2.default }),
-				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/missions', component: _mission2.default }),
-				_react2.default.createElement(_reactRouterDom.Route, { component: _home2.default })
+				_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/missions', component: _mission2.default })
 			);
 		}
 	}]);

@@ -30,7 +30,6 @@ export default class Body extends React.Component {
 				<Route exact path='/join' component={Join}/>
 				<Route exact path='/about' component={About}/>
 				<Route exact path='/missions' component={Mission}/>
-				<Route component={Home} />
 			</div>
 		);
 	}

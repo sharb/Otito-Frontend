@@ -49,7 +49,6 @@ let routes = (
     <Route exact path='/join' component={Join}/>
     <Route exact path='/about' component={About}/>
     <Route exact path='/missions' component={Mission}/>
-    <Route component={Home} />
 </Route>
 );
 
