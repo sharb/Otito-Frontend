@@ -1,0 +1,32 @@
+{
+  "name": "otito",
+  "version": "1.0.0",
+  "description": "Platform for finding credible news",
+  "main": "src/app/js/entry.js",
+  "scripts": {
+    "start": "python src/app/flask_app.py",
+    "build": "webpack --config webpack.config.js --watch --colors",
+    "dev": "webpack-dev-server --hot --progress --colors --config webpack.config.js",
+    "sass": "sass --watch src/app/styles/scss/base.scss:public/static/styles/bundled.css",
+    "mysql": "/usr/local/mysql-5.7.17-macos10.12-x86_64/bin/mysql -h localhost -u root -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "npm-sass": "^2.3.0",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-waypoint": "^8.0.3",
+    "scroll-snap": "^1.0.6"
+  },
+  "dependencies": {
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "sass": "^1.14.1"
+  }
+}

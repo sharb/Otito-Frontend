@@ -1,0 +1,111 @@
+$main-green: #7fe8b9;
+
+
+
+// IMPORTS
+@import 'header.scss';
+@import 'topic.scss';
+@import 'footer.scss';
+@import 'home.scss';
+@import 'home_scroll.scss';
+@import 'join.scss';
+@import 'about.scss';
+
+.main-header{
+  height: 12vh;
+   max-height: 12vh;
+//  border: 2px solid blue;
+  z-index: 999;
+}
+
+.main-body{
+  height: 70%;
+  max-height: 70%;
+ //  border: 2px solid blue;
+  background-color: white;
+}
+
+.main-footer{
+  position: relative !important;
+  height: 5vh;
+   max-height: 5vh;
+   bottom: 0;
+   //border: 2px solid blue;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+
+
+html, body {
+	height: 100%;
+	font-size: 100%;
+
+}
+
+
+.border{
+	border: 1px solid black;
+}
+
+.center-content-h {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+
+ .center-content-v {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+
+.main-wrapper {
+	height: 100% !important;
+}
+
+
+.full-width-container {
+  // height: calc(100vh - 80px);
+  // height: 100%;
+  min-height: 100%;
+}
+
+.full-width-container{
+  overflow: auto;
+  padding: 100px 200px 100px 200px;
+  @media only screen and (max-width : 979px) {
+    padding: 70px 50px 50px 50px;
+  }
+  // @media only screen and (max-width : 768px) {
+  // 	font-size: 30px;
+  // }
+  @media only screen and (max-width : 576px) {
+    padding: 70px 20px 50px 20px;
+  }
+  // @media only screen and (max-width : 320px) {
+  // 	font-size: 24px;
+  // }
+}
+
+
+
+

@@ -1,0 +1,44 @@
+#main-navbar {
+	//height: 114px !important;
+	//max-height: 114px !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	top: 40px !important;
+	z-index: 200;
+	background-color: white;
+
+	.menu-item{
+		padding: 0px;
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+		// width: 50px;
+		border-bottom: 2px solid transparent;
+	}
+
+	.menu-item:hover{
+		font-weight: 900;
+		border-bottom: 2px solid $main-green;
+	}
+
+
+	img#profile-pic {
+    	border-radius: 50%;
+	}
+
+
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item:hover .nav-link {
+    color: black;
+    font-weight: 800;
+}
+
+
+.active-tab {
+	font-weight: 900;
+	text-decoration: underline;
+  	border-bottom: 1px solid $main-green;
+}

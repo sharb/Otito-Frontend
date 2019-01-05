@@ -1,0 +1,29 @@
+.social-media {
+	margin: 0px;
+
+	.social-media-icon{
+		height: 30px;
+	}
+}
+
+
+.main-footer{
+	z-index: 1000;
+}
+
+
+#footer {
+	position: relative !important;
+	width: 100%;
+	bottom: 0;
+	background-color: #3c3c3c;
+	color: #ececec;
+
+
+	.footer-text {
+		color: #7add7b;
+		font-weight: 800;
+		font-size: 25px;
+	}
+}
+
