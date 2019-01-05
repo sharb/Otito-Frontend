@@ -2436,7 +2436,7 @@ var About = function (_React$Component) {
 							_react2.default.createElement(
 								'p',
 								null,
-								'There is one foundational tenet of truth that can have utility in the public sphere, with which it is impossible to disagree without disagreeing with the value and existence of objective truth itself. Truth must be \u201Cobjectively verifiable\u201D by anyone, for it to have universal utility. There are other, personal kinds of truth, but these cannot be used as the gel of social cohesion, since they cannot be known by all the people they seek to bind. Truth only has value if it is known to be true\u2013\u2014and if truth is to be valued by all, then it must be knowable by all.'
+								'Truth must be \u201Cobjectively verifiable\u201D by anyone, for it to have universal utility. There are other, personal kinds of truth, but these cannot be used as the gel of social cohesion, since they cannot be known by all the people they seek to bind. Truth only has value if it is known to be true\u2013\u2014and if truth is to be valued by all, then it must be knowable by all.'
 							),
 							_react2.default.createElement(
 								'h5',
@@ -2446,7 +2446,7 @@ var About = function (_React$Component) {
 							_react2.default.createElement(
 								'p',
 								null,
-								'We will rely on a community of users to contribute and moderate facts (and their sources) on the platform. Trust in traditional (e.g. news publishers) and non-traditional (e.g. social media platforms) sources of information is at an all-time low and getting lower still. The transparent and consensus-based nature of the standards of our platform will help rejuvenate that trust in online information.'
+								'We will rely on a community of users to contribute and moderate facts (and their sources) on the platform. Trust in traditional (e.g. news publishers) and non-traditional sources of information is at an all-time low and getting lower still. The transparent and consensus-based nature of the standards of our platform will help rejuvenate that trust in online information.'
 							),
 							_react2.default.createElement(
 								'h5',
@@ -2975,7 +2975,7 @@ var Mission = function (_React$Component) {
 							_react2.default.createElement(
 								'p',
 								null,
-								'Many of us see parts of the Internet\u2014social media, specifically\u2014as horrible tools of deception and manipulation. People spewing all kinds of crazy and inaccurate views. Bad actors using propaganda to manipulate voters. Mob mentality and mass shaming as tools for social conditioning. Wouldn\u2019t life be better without them? Wouldn\u2019t it be easier to uphold the truth?'
+								'Many of us see parts of the Internet as horrible tools of deception and manipulation. People spewing all kinds of crazy and inaccurate views. Bad actors using propaganda to manipulate voters. Mob mentality and mass shaming as tools for social conditioning. Wouldn\u2019t life be better without them? Wouldn\u2019t it be easier to uphold the truth?'
 							),
 							_react2.default.createElement(
 								'p',
@@ -3036,14 +3036,6 @@ var Mission = function (_React$Component) {
 								'p',
 								null,
 								'If you believe some good can come from the ideas I\u2019ve shared here, then join us. Not because I need you\u2026 but because the world does.'
-							),
-							_react2.default.createElement('br', null),
-							_react2.default.createElement(
-								'p',
-								null,
-								'Timi Olotu',
-								_react2.default.createElement('br', null),
-								'Founder, \xF2t\xEDt\xF3'
 							)
 						)
 					)

@@ -30,11 +30,11 @@ export default class About extends React.Component {
 
 							<h5>Truth axiom</h5>
 							<p>
-								There is one foundational tenet of truth that can have utility in the public sphere, with which it is impossible to disagree without disagreeing with the value and existence of objective truth itself. Truth must be “objectively verifiable” by anyone, for it to have universal utility. There are other, personal kinds of truth, but these cannot be used as the gel of social cohesion, since they cannot be known by all the people they seek to bind. Truth only has value if it is known to be true–—and if truth is to be valued by all, then it must be knowable by all. 
+								Truth must be “objectively verifiable” by anyone, for it to have universal utility. There are other, personal kinds of truth, but these cannot be used as the gel of social cohesion, since they cannot be known by all the people they seek to bind. Truth only has value if it is known to be true–—and if truth is to be valued by all, then it must be knowable by all. 
 							</p>
 							<h5>Democratised tool</h5>
 							<p>
-								We will rely on a community of users to contribute and moderate facts (and their sources) on the platform. Trust in traditional (e.g. news publishers) and non-traditional (e.g. social media platforms) sources of information is at an all-time low and getting lower still. The transparent and consensus-based nature of the standards of our platform will help rejuvenate that trust in online information. 
+								We will rely on a community of users to contribute and moderate facts (and their sources) on the platform. Trust in traditional (e.g. news publishers) and non-traditional sources of information is at an all-time low and getting lower still. The transparent and consensus-based nature of the standards of our platform will help rejuvenate that trust in online information. 
 							</p>
 							<h5>Distilled truth</h5>
 							<p>

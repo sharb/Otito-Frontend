@@ -26,7 +26,7 @@ export default class Mission extends React.Component {
 						<div className="col-12">
 						<h3>We’ve set the truth free… and it terrifies us</h3>
 						<p>
-						Many of us see parts of the Internet—social media, specifically—as horrible tools of deception and manipulation. People spewing all kinds of crazy and inaccurate views. Bad actors using propaganda to manipulate voters. Mob mentality and mass shaming as tools for social conditioning. Wouldn’t life be better without them? Wouldn’t it be easier to uphold the truth?
+						Many of us see parts of the Internet as horrible tools of deception and manipulation. People spewing all kinds of crazy and inaccurate views. Bad actors using propaganda to manipulate voters. Mob mentality and mass shaming as tools for social conditioning. Wouldn’t life be better without them? Wouldn’t it be easier to uphold the truth?
 						</p>
 						<p>
 						It might seem that way but we rarely pause to think of the alternative—a world where a handful of newspapers, politicians and academics get to decide for you which information is accessible. After all, if we don’t like the free-for-all nature of how information is generated on the Internet, then we must appoint moderators. But there is a reason why we kept innovating until we freed ourselves from that paradigm—when only a few people controlled the flow of information through society, they kept too much of it to themselves. This power—held by de facto arbiters of truth—was insidious because not only did we have no way of knowing when it was being abused, we also had no real alternative to it.
@@ -63,11 +63,6 @@ export default class Mission extends React.Component {
 						</p>
 						<p>
 						If you believe some good can come from the ideas I’ve shared here, then join us. Not because I need you… but because the world does. 
-						</p>
-						<br></br>
-						<p>
-						Timi Olotu<br></br>
-						Founder, òtító
 						</p>
 						</div>
 					</div>
